@@ -1,24 +1,71 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| nickname           | string  | null: false |
+| email              | string  | null: false |
+| encrypted_password | string  | null: false |
+| kanji_family_name  | string  | null: false |
+| kanji_first_name   | string  | null: false |
+| zip_code           | string  | null: false |
+| region_id          | integer | null: false |
+| city               | string  | null: false |
+| address1           | string  | null: false |
+| address2           | string  |             |
+| phone              | string  | null: false |
 
-* Ruby version
+### Association
+- has_one :house
+- has_many :cats
+- has_many :reservations
 
-* System dependencies
+## houses テーブル
 
-* Configuration
+| Column           | Type       | Options                        |
+| ---------------- | ---------- | ------------------------------ |
+| pr               | text       | null: false                    |
+| explanation      | text       |                                |
+| cat_history      | integer    | null: false                    |
+| character        | integer    | null: false                    |
+| long_stay_price  | integer    | null: false                    |
+| short_stay_price | integer    | null: false                    |
+| user             | references | null: false, foreign_key: true |
 
-* Database creation
+### Association
+- belongs_to :user
+- has_many :reservations
 
-* Database initialization
 
-* How to run the test suite
+## cats テーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| name        | string     | null: false                    |
+| age         | integer    | null: false                    |
+| sex         | integer    | null: false                    |
+| character   | integer    | null: false                    |
+| explanation | text       | null: false                    |
+| user        | references | null: false, foreign_key: true |
 
-* Deployment instructions
+### Association
+- belongs_to :user
+- has_many :reservations
 
-* ...
+## reservations テーブル
+
+| Column           | Type       | Options                        |
+| ---------------- | ---------- | ------------------------------ |
+| start_date       | date       | null: false                    |
+| long_stay_days   | integer    | null: false                    |
+| short_stay_hours | integer    | null: false                    |
+| message          | integer    | null: false                    |
+| user             | references | null: false, foreign_key: true |
+| house            | references | null: false, foreign_key: true |
+| cat              | references | null: false, foreign_key: true |
+
+### Association
+- belongs_to :user
+- belongs_to :house
+- belongs_to :cat
