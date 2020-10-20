@@ -23,15 +23,15 @@
 
 ## houses テーブル
 
-| Column           | Type       | Options                        |
-| ---------------- | ---------- | ------------------------------ |
-| pr               | text       | null: false                    |
-| explanation      | text       |                                |
-| cat_history      | integer    | null: false                    |
-| character        | integer    | null: false                    |
-| long_stay_price  | integer    | null: false                    |
-| short_stay_price | integer    | null: false                    |
-| user             | references | null: false, foreign_key: true |
+| Column        | Type       | Options                        |
+| ------------- | ---------- | ------------------------------ |
+| pr            | text       | null: false                    |
+| explanation   | text       |                                |
+| cat_history   | integer    | null: false                    |
+| character     | integer    | null: false                    |
+| stay_price    | integer    | null: false                    |
+| one_day_price | integer    | null: false                    |
+| user          | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
@@ -55,15 +55,15 @@
 
 ## reservations テーブル
 
-| Column           | Type       | Options                        |
-| ---------------- | ---------- | ------------------------------ |
-| start_date       | date       | null: false                    |
-| long_stay_days   | integer    | null: false                    |
-| short_stay_hours | integer    | null: false                    |
-| message          | integer    | null: false                    |
-| user             | references | null: false, foreign_key: true |
-| house            | references | null: false, foreign_key: true |
-| cat              | references | null: false, foreign_key: true |
+| Column        | Type       | Options                        |
+| ------------  | ---------- | ------------------------------ |
+| start_date    | date       | null: false                    |
+| stay_days     | integer    | null: false                    |
+| one_day_hours | integer    | null: false                    |
+| message       | integer    | null: false                    |
+| user          | references | null: false, foreign_key: true |
+| house         | references | null: false, foreign_key: true |
+| cat           | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
