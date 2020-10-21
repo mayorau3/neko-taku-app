@@ -29,8 +29,8 @@
 | explanation   | text       |                                |
 | cat_history   | integer    | null: false                    |
 | character     | integer    | null: false                    |
-| stay_price    | integer    | null: false                    |
-| one_day_price | integer    | null: false                    |
+| stay_price    | integer    |                                |
+| one_day_price | integer    |                                |
 | user          | references | null: false, foreign_key: true |
 
 ### Association
@@ -58,9 +58,9 @@
 | Column        | Type       | Options                        |
 | ------------  | ---------- | ------------------------------ |
 | start_date    | date       | null: false                    |
-| stay_days     | integer    | null: false                    |
-| one_day_hours | integer    | null: false                    |
-| message       | integer    | null: false                    |
+| stay_days     | integer    |                                |
+| one_day_hours | integer    |                                |
+| message       | text       | null: false                    |
 | user          | references | null: false, foreign_key: true |
 | house         | references | null: false, foreign_key: true |
 | cat           | references | null: false, foreign_key: true |
