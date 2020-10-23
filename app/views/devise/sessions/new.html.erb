@@ -10,20 +10,20 @@
     <small class="text-danger">※ 必須項目</small>
   </div>
   <div class='card-body w-75 mx-auto'>
-    <div class='login-flash-message'>
+    <div class='login-flash-message my-3 text-info'>
       <%= flash[:notice] %>
       <%= flash[:alert] %>
     </div>
     <div class="form-group">
       <div class='d-flex'>
-        <label class="form-text">メールアドレス</label>
+        <label class="form-text mr-2">メールアドレス</label>
         <span class="text-danger">※</span>
       </div>
       <%= f.email_field :email, class:"form-control", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
     </div>
     <div class="form-group">
       <div class='d-flex'>
-        <label class="form-text">パスワード</label>
+        <label class="form-text mr-2">パスワード</label>
         <span class="text-danger">※</span>
       </div>
       <%= f.password_field :password, class:"form-control", id:"password", placeholder:"" %>

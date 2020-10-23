@@ -17,7 +17,7 @@
         <label class="form-text mr-2">ニックネーム</label>
         <span class="text-danger">※</span>
       </div>
-      <%= f.text_field :nickname, class:"form-control", id:"nickname", placeholder:"例) にゃんこ", maxlength:"40" %>
+      <%= f.text_area :nickname, class:"form-control", id:"nickname", placeholder:"例) にゃんこ", maxlength:"40" %>
     </div>
     <div class="form-group">
       <div class='d-flex'>
@@ -43,7 +43,7 @@
         <%= f.password_field :password_confirmation, class:"form-control", id:"password-confirmation", placeholder:"同じパスワードを入力して下さい" %>
       </div>
     </div>
-    <div class="form-group">
+    <div class="form-group border-top mt-5">
       <h4 class='text-dark'><br>本人確認</h4>
     </div>
     <div class="form-row">
@@ -52,14 +52,14 @@
           <label class="form-text mr-2">姓(全角)</label>
           <span class="text-danger">※</span>
         </div>
-          <%= f.text_field :kanji_family_name, class:"form-control", id:"first-name", placeholder:"例) 猫田" %>
+          <%= f.text_area :kanji_family_name, class:"form-control", id:"first-name", placeholder:"例) 猫田" %>
       </div>
       <div class="form-group col-md-6">
         <div class='d-flex'>
           <label class="form-text mr-2">名(全角)</label>
           <span class="text-danger">※</span>
         </div>
-        <%= f.text_field :kanji_first_name, class:"form-control", id:"last-name", placeholder:"例) たま子" %>
+        <%= f.text_area :kanji_first_name, class:"form-control", id:"last-name", placeholder:"例) たま子" %>
       </div>
 
     </div>
@@ -76,6 +76,7 @@
           <label class="form-text mr-2">都道府県</label>
           <span class="text-danger">※</span>
         </div>
+        <%= f.text_field :region_id, class:"form-control", id:"region_id", placeholder:"例）北海道"%>
         <%#= f.collection_select(:prefecture, Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
       </div>
     </div>
