@@ -1,313 +1,239 @@
-<!doctype html>
-<html lang="ja">
-  <head>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+<%= render "shared/header" %>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+<main role="main">
 
-  </head>
-  <body>
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
+
+  <div class="container">
+    <div class="card">
+      <img class="img-fluid rounded" src="/assets/nekotaku01.jpg" alt="">
+      <div class="card-img-overlay d-flex justify-content-end align-items-center">
+        <a href="#" class="btn btn-info mr-4">Ｍｙ猫登録へ</a>
+        <a href="#" class="btn btn-secondary ">Ｍｙ宅登録へ</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light">
+    <div class="container">
+      <h3 class="py-3">預け先を探そう。</h3>
+      <div class="card">
+        <div class="card-body p-5">
+          <table class="table-borderless">
+            <tbody>
+              <tr>
+                <td class="">エリア</td>
+                <td>
+                  <select class="">
+                    <option value=""></option>
+                    <option value="01">北海道</option>
+                    <option value="02">青森</option>
+                    <option value="11">埼玉</option>
+                  </select>
+                  <select class="">
+                    <option value=""></option>
+                    <option value="01">戸田・川口エリア</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="my-3">猫歴</td>
+                <td>
+                  <select class="my-3">
+                    <option value=""></option>
+                    <option value="0">1年未満</option>
+                    <option value="1">1年以上</option>
+                    <option value="2">2年以上</option>
+                    <option value="3">3年以上</option>
+                    <option value="4">4年以上</option>
+                    <option value="5">5年以上</option>
+                    <option value="99">なし</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="my-3">その他</td>
+                <td>
+                  <input class="my-3" name="character" id="stay" type="checkbox" value="1"/><label for="stay">お泊まり可</label>
+                  <input class="my-3" name="character" id="5minutes" type="checkbox" value="2"/><label for="5minutes">最寄駅から徒歩5分以内</label>
+                  <input class="my-3" name="character" id="detached_house" type="checkbox" value="3"/><label for="detached_house">戸建て</label>
+                  <input class="my-3" name="character" id="floor" type="checkbox" value="4"/><label for="floor">フローリング</label>
+                  <input class="my-3" name="character" id="weekend" type="checkbox" value="5"/><label for="weekend">土日可</label>
+                  <input class="my-3" name="character" id="weekday" type="checkbox" value="6"/><label for="weekday">平日可</label>
+                  <input class="my-3" name="character" id="having_cat" type="checkbox" value="7"/><label for="having_cat">飼い猫在り</label>
+                  <input class="my-3" name="character" id="cat_tower" type="checkbox" value="8"/><label for="cat_tower">キャットタワー有</label>
+                  <input class="my-3" name="character" id="camera" type="checkbox" value="9"/><label for="camera">Webカメラ有</label>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td class="text-right">
+                  <button class="btn btn-info mt-3 text-center" id="search" type="button">見つける</button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">預かりたい人のPRをここに記載する。</p>
+              <div class="price mx-auto" style="width: 260px;">
+                <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
+                <span>泊まり 1stay : 999<small>円 (税込)</small></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
+                <img class="" src="/assets/heart2.png" height="30" width="30">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            <strong>About</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>
-    
-    <main role="main">
-    
-      <div class="container">
-        <div class="header-nekotaku d-flex justify-content-between align-items-center">
-          <h2 class="">rogo</h2>
-          <nav>
-            <ul class="nav nav-pills">
-              <li class="header-nekotaku-li"><a href="#"><img class="w-25" src="/assets/heart2.png"/></a></li>
-              <% if user_signed_in? %>
-                <li><%= link_to current_user.nickname, root_path, class: "user-nickname text-dark mr-4" %></li>
-                <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout text-dark" %></li>
-              <% else %>
-                <li><%= link_to 'ログイン', new_user_session_path, class: "login text-dark mr-4" %></li>
-                <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up text-dark" %></li>
-              <% end %>
-            </ul>
-          </nav>
-        </div>
-        <div class="card">
-          <img class="img-fluid rounded" src="/assets/nekotaku01.jpg" alt="">
-          <div class="card-img-overlay d-flex justify-content-end align-items-center">
-            <a href="#" class="btn btn-info mr-4">My猫登録へ</a>
-            <a href="#" class="btn btn-secondary ">My宅登録へ</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-light">
-        <div class="container">
-          <h3 class="py-3">預け先を探そう。</h3>
-          <div class="card">
-            <div class="card-body p-5">
-              <table class="table-borderless">
-                <tbody>
-                  <tr>
-                    <td class="">エリア</td>
-                    <td>
-                      <select class="">
-                        <option value=""></option>
-                        <option value="01">北海道</option>
-                        <option value="02">青森</option>
-                        <option value="11">埼玉</option>
-                      </select>
-                      <select class="">
-                        <option value=""></option>
-                        <option value="01">戸田・川口エリア</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="my-3">猫歴</td>
-                    <td>
-                      <select class="my-3">
-                        <option value=""></option>
-                        <option value="0">1年未満</option>
-                        <option value="1">1年以上</option>
-                        <option value="2">2年以上</option>
-                        <option value="3">3年以上</option>
-                        <option value="4">4年以上</option>
-                        <option value="5">5年以上</option>
-                        <option value="99">なし</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="my-3">その他</td>
-                    <td>
-                      <input class="my-3" name="character" id="stay" type="checkbox" value="1"/><label for="stay">お泊まり可</label>
-                      <input class="my-3" name="character" id="5minutes" type="checkbox" value="2"/><label for="5minutes">最寄駅から徒歩5分以内</label>
-                      <input class="my-3" name="character" id="detached_house" type="checkbox" value="3"/><label for="detached_house">戸建て</label>
-                      <input class="my-3" name="character" id="floor" type="checkbox" value="4"/><label for="floor">フローリング</label>
-                      <input class="my-3" name="character" id="weekend" type="checkbox" value="5"/><label for="weekend">土日可</label>
-                      <input class="my-3" name="character" id="weekday" type="checkbox" value="6"/><label for="weekday">平日可</label>
-                      <input class="my-3" name="character" id="having_cat" type="checkbox" value="7"/><label for="having_cat">飼い猫在り</label>
-                      <input class="my-3" name="character" id="cat_tower" type="checkbox" value="8"/><label for="cat_tower">キャットタワー有</label>
-                      <input class="my-3" name="character" id="camera" type="checkbox" value="9"/><label for="camera">Webカメラ有</label>
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td></td>
-                    <td class="text-right">
-                      <button class="btn btn-info mt-3 text-center" id="search" type="button">見つける</button>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">預かりたい人のPRをここに記載する。</p>
+              <div class="price mx-auto" style="width: 260px;">
+                <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
+                <span>泊まり 1stay : 999<small>円 (税込)</small></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
+                <img class="" src="/assets/heart2.png" height="30" width="30">
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">預かりたい人のPRをここに記載する。</p>
+              <div class="price mx-auto" style="width: 260px;">
+                <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
+                <span>泊まり 1stay : 999<small>円 (税込)</small></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
+                <img class="" src="/assets/heart2.png" height="30" width="30">
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-    
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 shadow">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">預かりたい人のPRをここに記載する。</p>
-                  <div class="price mx-auto" style="width: 260px;">
-                    <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
-                    <span>泊まり 1stay : 999<small>円 (税込)</small></span>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
-                    <img class="" src="/assets/heart2.png" height="30" width="30">
-                  </div>
-                </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">預かりたい人のPRをここに記載する。</p>
+              <div class="price mx-auto" style="width: 260px;">
+                <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
+                <span>泊まり 1stay : 999<small>円 (税込)</small></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
+                <img class="" src="/assets/heart2.png" height="30" width="30">
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">預かりたい人のPRをここに記載する。</p>
+              <div class="price mx-auto" style="width: 260px;">
+                <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
+                <span>泊まり 1stay : 999<small>円 (税込)</small></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
+                <img class="" src="/assets/heart2.png" height="30" width="30">
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">預かりたい人のPRをここに記載する。</p>
+              <div class="price mx-auto" style="width: 260px;">
+                <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
+                <span>泊まり 1stay : 999<small>円 (税込)</small></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
+                <img class="" src="/assets/heart2.png" height="30" width="30">
               </div>
             </div>
-    
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">預かりたい人のPRをここに記載する。</p>
+              <div class="price mx-auto" style="width: 260px;">
+                <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
+                <span>泊まり 1stay : 999<small>円 (税込)</small></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
+                <img class="" src="/assets/heart2.png" height="30" width="30">
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">預かりたい人のPRをここに記載する。</p>
+              <div class="price mx-auto" style="width: 260px;">
+                <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
+                <span>泊まり 1stay : 999<small>円 (税込)</small></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
+                <img class="" src="/assets/heart2.png" height="30" width="30">
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">預かりたい人のPRをここに記載する。</p>
+              <div class="price mx-auto" style="width: 260px;">
+                <span>日帰り 1h : 999<small>円 (税込)</small></span><br>
+                <span>泊まり 1stay : 999<small>円 (税込)</small></span>
               </div>
-            </div>
-    
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-sm btn-outline-secondary">詳しく見てみよう。</button>
+                <img class="" src="/assets/heart2.png" height="30" width="30">
               </div>
             </div>
           </div>
         </div>
       </div>
-    
-    </main>
-    
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">
-            <img width="70" src="/assets/ashi_top.gif">
-          </a>
-          <h6 class="ad-footer-title mt-3">今すぐ無料ダウンロード！</h6>
-          <div class='store-btn'>
-            <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
-            <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
-          </div>
-        </p>
-        <p class="float-right">Copyright &copy; 2020 Neko-Taku All Rights Reserved.</p>
-      </div>
-    </footer>
-  </body>
-</html>
+    </div>
+  </div>
+
+</main>
+
+<%= render "shared/footer" %>
