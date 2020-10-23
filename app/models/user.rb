@@ -4,6 +4,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to_active_hash :region
+
+
   validates :nickname, presence: true
 
   # パスワード半角英数字混合
@@ -24,13 +28,11 @@ class User < ApplicationRecord
     validates :phone, length: { maximum: 11 }
   end
     # 「住所」の都道府県に関するバリデーション 選択が「---」の時は保存できない
-    validates :reigon_id, numericality: { other_than: 1, message: 'Select' }
+    validates :region_id, numericality: { other_than: 1, message: 'Select' }
 
   has_one :house
   has_many :cats
   has_many :reservations
 
-  extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to_active_hash :region
 
 end
