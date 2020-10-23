@@ -34,7 +34,7 @@
       <h2 class="">rogo</h2>
       <nav>
         <ul class="nav nav-pills">
-          <li class="header-nekotaku-li"><a href="#"><img class="w-25" src="/assets/heart2.png"/></a></li>
+          <li class="header-nekotaku-li"><a href="#"><%=image_tag "heart2.png", class:"w-25" %></a></li>
           <% if user_signed_in? %>
             <li><%= link_to current_user.nickname, root_path, class: "user-nickname text-dark mr-4" %></li>
             <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout text-dark" %></li>
