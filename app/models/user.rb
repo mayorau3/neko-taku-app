@@ -23,10 +23,14 @@ class User < ApplicationRecord
     # 「電話番号」に関するバリデーション
     validates :phone, length: { maximum: 11 }
   end
-    # 「住所」の都道府県に関するバリデーション
-    # validates :reigon_id, numericality: { other_than: 1, message: 'Select' }
+    # 「住所」の都道府県に関するバリデーション 選択が「---」の時は保存できない
+    validates :reigon_id, numericality: { other_than: 1, message: 'Select' }
 
   has_one :house
   has_many :cats
   has_many :reservations
+
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to_active_hash :region
+
 end
