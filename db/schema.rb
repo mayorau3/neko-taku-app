@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_10_21_031806) do
     t.string "name", null: false
     t.integer "age", null: false
     t.integer "sex", null: false
-    t.integer "character", null: false
+    t.integer "character"
     t.text "explanation", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_10_21_031806) do
     t.text "pr", null: false
     t.text "explanation"
     t.integer "cat_history", null: false
-    t.integer "character", null: false
+    t.integer "character"
     t.integer "stay_price"
     t.integer "one_day_price"
     t.bigint "user_id", null: false
@@ -69,8 +69,6 @@ ActiveRecord::Schema.define(version: 2020_10_21_031806) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "cats", "users"

@@ -4,7 +4,7 @@ class CreateHouses < ActiveRecord::Migration[6.0]
       t.text       :pr,            null: false
       t.text       :explanation
       t.integer    :cat_history,   null: false
-      t.integer    :character,     null: false
+      t.integer    :character
       t.integer    :stay_price
       t.integer    :one_day_price
       t.references :user,          null: false, foreign_key: true

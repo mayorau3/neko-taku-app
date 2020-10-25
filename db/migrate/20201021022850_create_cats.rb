@@ -4,7 +4,7 @@ class CreateCats < ActiveRecord::Migration[6.0]
       t.string     :name,        null: false
       t.integer    :age,         null: false
       t.integer    :sex,         null: false
-      t.integer    :character,   null: false
+      t.integer    :character
       t.text       :explanation, null: false
       t.references :user,        null: false, foreign_key: true
       t.timestamps
