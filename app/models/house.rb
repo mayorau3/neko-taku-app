@@ -1,6 +1,8 @@
 class House < ApplicationRecord
   belongs_to :user
   has_many :reservations
+  
+  extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :cat_history
 
   validates :pr, :explanation, presence: true

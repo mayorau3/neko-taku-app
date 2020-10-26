@@ -1,114 +1,108 @@
 <%= render "shared/header" %>
 
-<%= form_with model: @house, url: houses_path, class: 'main', local: true do |f| %>
+<main role="main">
 
-<div class="card container bg-light my-3 pt-3">
-  <div class='card-header bg-light d-flex justify-content-between align-items-center'>
-      <h3 class='text-dark ml-5'>
-        お宅情報を登録しよう。
-      </h3>
-      <small class="text-danger">※ 必須項目</small>
-  </div>
-  
-  <%#= render 'shared/error_messages', model: f.object %>
+  <%= form_with model: @house, url: houses_path, class: 'main', local: true do |f| %>
 
-  <div class='card-body w-75 mx-auto'>
-    <div class="form-group">
-      <div class='d-flex'>
-        <label class="form-text mr-2">PR</label>
-        <span class="text-danger">※</span>
-        <small class="align-self-center ml-4">猫の飼い主さんに向けて、PRを入力しましょう。</small>
-      </div>
-      <%= f.text_field :pr, class:"form-control", id:"pr", placeholder:"例)可愛い猫ちゃん、待ってます！", maxlength:"40" %>
-    </small>
-
-    <%# 画像 %>
-    <div class="img-upload">
-      <div class="weight-bold-text">
-        お宅画像
-        <span class="text-danger">※</span>
-      </div>
-      <div class="click-upload">
-        <p>
-          クリックしてファイルをアップロード
-        </p>
-        <%#= f.file_field :images, name:'item[images][]', id:"item-image" %>
-        <%# プレビュー画像%>
-        <div id="image-list"></div>
-        <%# /プレビュー画像%>
-      </div>
+  <div class="card container bg-light my-3 pt-3">
+    <div class='card-header bg-light d-flex justify-content-between align-items-center'>
+        <h3 class='text-dark ml-5'>
+          お宅情報を登録しよう。
+        </h3>
+        <small class="text-danger">※ 必須項目</small>
     </div>
-    <%# /画像 %>
+    
+    <%#= render 'shared/error_messages', model: f.object %>
 
-    <div class="form-group">
-      <div class='d-flex'>
-        <label class="form-text mr-2">詳細説明</label>
-        <span class="text-danger">※</span>
-        <small class="align-self-center ml-4">お宅について、詳しい内容を入力しましょう。</small>
-      </div>
-      <%= f.text_area :explanation, class:"form-control", id:"explanation", placeholder:"猫の飼い主さんに、どんなお宅なのか、詳細をここに記載しましょう。  例）どんなお宅なのか／どんな生活スタイルなのか／猫が喜ぶものがあるのか等", autofocus: true, rows:"7" ,maxlength:"1000" %>
-    </div>
+    <div class='card-body w-75 mx-auto'>
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text mr-2">PR</label>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">猫の飼い主さんに向けて、PRを入力しましょう。</small>
+        </div>
+        <%= f.text_field :pr, class:"form-control", id:"pr", placeholder:"例)可愛い猫ちゃん、待ってます！", maxlength:"40" %>
+      </small>
 
-    <div class="form-group">
-      <div class='d-flex'>
-        <label class="form-text mr-2">猫 歴</label>
-        <span class="text-danger">※</span>
-        <small class="align-self-center ml-4">猫と暮したことのある期間を選びましょう。</small>
-      </div>
-      <%= f.collection_select(:cat_history_id, CatHistory.all, :id, :name, {}, {class:"form-control"}) %>
-    </div>
-    <div class="form-group">
-      <div class='d-flex'>
-        <label class="form-text">特 徴</label>
-        <small class="align-self-center ml-4">当てはまるものをお選びください。</small>
-      </div>
-      <div class="">
-        <div class="form-check form-check-inline col-md-4 ml-5">
-          <input class="my-3" name="character" id="stay" type="checkbox" value="1"/>
-          <label for="stay">お泊まり可</label>
+      <%# 画像 %>
+      <div class="img-upload">
+        <div class="weight-bold-text mr-2">
+          お宅画像
+          <span class="text-danger">※</span>
         </div>
-        <div class="form-check form-check-inline col-md-4 ml-5">
-          <input class="my-3" name="character" id="5minutes" type="checkbox" value="2"/>
-          <label for="5minutes">最寄駅から徒歩5分以内</label>
-        </div>
-        <div class="form-check form-check-inline col-md-4 ml-5">
-          <input class="my-3" name="character" id="detached_house" type="checkbox" value="3"/>
-          <label for="detached_house">戸建て</label>
-        </div>
-        <div class="form-check form-check-inline col-md-4 ml-5">
-          <input class="my-3" name="character" id="floor" type="checkbox" value="4"/>
-          <label for="floor">フローリング</label>
-        </div>
-        <div class="form-check form-check-inline col-md-4 ml-5">
-          <input class="my-3" name="character" id="weekend" type="checkbox" value="5"/>
-          <label for="weekend">土日可</label>
-        </div>
-        <div class="form-check form-check-inline col-md-4 ml-5">
-          <input class="my-3" name="character" id="weekday" type="checkbox" value="6"/>
-          <label for="weekday">平日可</label>
-        </div>
-        <div class="form-check form-check-inline col-md-4 ml-5">
-          <input class="my-3" name="character" id="having_cat" type="checkbox" value="7"/>
-          <label for="having_cat">飼い猫在り</label>
-        </div>
-        <div class="form-check form-check-inline col-md-4 ml-5">
-          <input class="my-3" name="character" id="cat_tower" type="checkbox" value="8"/>
-          <label for="cat_tower">キャットタワー有</label>
-        </div>
-        <div class="form-check form-check-inline col-md-4 ml-5">
-          <input class="my-3" name="character" id="camera" type="checkbox" value="9"/>
-          <label for="camera">Webカメラ有</label>
+        <div class="click-upload">
+          <p>
+            クリックしてファイルをアップロード
+          </p>
+          <%#= f.file_field :images, name:'item[images][]', id:"item-image" %>
+          <%# プレビュー画像%>
+          <div id="image-list"></div>
+          <%# /プレビュー画像%>
         </div>
       </div>
-    </div>
+      <%# /画像 %>
 
-    <div class='text-center my-5'>
-      <%= f.submit "登録する" ,class:"btn-lg btn-info" %>
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text mr-2">詳細説明</label>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">お宅について、詳しい内容を入力しましょう。</small>
+        </div>
+        <%= f.text_area :explanation, class:"form-control", id:"explanation", placeholder:"猫の飼い主さんに、どんなお宅なのか、詳細をここに記載しましょう。  例）どんなお宅なのか／どんな生活スタイルなのか／猫が喜ぶものがあるのか等", autofocus: true, rows:"7" ,maxlength:"1000" %>
+      </div>
+
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text mr-2">猫 歴</label>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">猫と暮したことのある期間を選びましょう。</small>
+        </div>
+        <%= f.collection_select(:cat_history_id, CatHistory.all, :id, :name, {}, {class:"form-control"}) %>
+      </div>
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text">特 徴</label>
+          <small class="align-self-center ml-4">当てはまるものをお選びください。</small>
+        </div>
+        <div class="">
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:character, {multiple: true, class:"my-3"}, 1, nil) %>お泊まり可
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:character, {multiple: true, class:"my-3"}, 2, nil) %>最寄駅から徒歩5分以内
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:character, {multiple: true, class:"my-3"}, 3, nil) %>戸建て
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:character, {multiple: true, class:"my-3"}, 4, nil) %>フローリング
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:character, {multiple: true, class:"my-3"}, 5, nil) %>土日祝日可
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:character, {multiple: true, class:"my-3"}, 6, nil) %>平日可
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:character, {multiple: true, class:"my-3"}, 7, nil) %>飼い猫在り
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:character, {multiple: true, class:"my-3"}, 8, nil) %>キャットタワー有
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:character, {multiple: true, class:"my-3"}, 9, nil) %>Webカメラ有
+          </div>
+        </div>
+      </div>
+
+      <div class='text-center my-5'>
+        <%= f.submit "登録する" ,class:"btn-lg btn-info" %>
+      </div>
     </div>
   </div>
-</div>
-<% end %>
+  <% end %>
 
+</main>
 
 <%= render "shared/footer" %>
 
