@@ -23,15 +23,15 @@
 
 ## houses テーブル
 
-| Column        | Type       | Options                        |
-| ------------- | ---------- | ------------------------------ |
-| pr            | text       | null: false                    |
-| explanation   | text       |                                |
-| cat_history   | integer    | null: false                    |
-| character     | integer    |                                |
-| stay_price    | integer    |                                |
-| one_day_price | integer    |                                |
-| user          | references | null: false, foreign_key: true |
+| Column         | Type       | Options                        |
+| -------------- | ---------- | ------------------------------ |
+| pr             | text       | null: false                    |
+| explanation    | text       |                                |
+| cat_history_id | integer    | null: false                    |
+| character      | integer    |                                |
+| stay_price     | integer    |                                |
+| one_day_price  | integer    |                                |
+| user           | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
