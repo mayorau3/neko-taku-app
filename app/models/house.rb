@@ -7,6 +7,9 @@ class House < ApplicationRecord
 
   validates :pr, :explanation, presence: true
 
+  # 価格の範囲指定 ¥300〜¥9,999,999の間、半角数字のみ可
+  validates :one_day_price, :stay_price, presence: true, format: { with: /\A.[0-9]+\z/, message: 'Half-width number' }
+
   # stay_priceが空ならば、one_day_priceを必須にする
   validates :one_day_price, presence: true, unless: :stay_price?
 
