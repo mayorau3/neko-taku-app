@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2020_10_21_031806) do
 
   create_table "houses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "pr", null: false
-    t.text "explanation"
+    t.text "explanation", null: false
     t.integer "cat_history_id", null: false
     t.integer "character"
     t.integer "stay_price"

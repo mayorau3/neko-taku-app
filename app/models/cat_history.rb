@@ -1,4 +1,4 @@
-class CatHistory < ApplicationRecord
+class CatHistory < ActiveHash::Base
   self.data = [
     { id: 1, name: '---' },
     { id: 2, name: '1年未満' },

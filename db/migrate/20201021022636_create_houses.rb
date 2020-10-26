@@ -2,7 +2,7 @@ class CreateHouses < ActiveRecord::Migration[6.0]
   def change
     create_table :houses do |t|
       t.text       :pr,            null: false
-      t.text       :explanation
+      t.text       :explanation,   null: false
       t.integer    :cat_history_id,   null: false
       t.integer    :character
       t.integer    :stay_price

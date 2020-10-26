@@ -26,7 +26,7 @@
 | Column         | Type       | Options                        |
 | -------------- | ---------- | ------------------------------ |
 | pr             | text       | null: false                    |
-| explanation    | text       |                                |
+| explanation    | text       | null: false                    |
 | cat_history_id | integer    | null: false                    |
 | character      | integer    |                                |
 | stay_price     | integer    |                                |
