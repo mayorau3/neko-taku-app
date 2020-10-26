@@ -22,7 +22,7 @@
           <small class="align-self-center ml-4">猫の飼い主さんに向けて、PRを入力しましょう。</small>
         </div>
         <%= f.text_field :pr, class:"form-control", id:"pr", placeholder:"例)可愛い猫ちゃん、待ってます！", maxlength:"40" %>
-      </small>
+      </div>
 
       <%# 画像 %>
       <div class="img-upload">
@@ -95,6 +95,57 @@
         </div>
       </div>
 
+    <%# 価格 %>
+    <div class="form-group">
+      <div class="weight-bold-text question-text">
+        <span>価 格</span>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="price-text">
+            <span>お泊まり</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-group d-flex">
+            <label class="col-lg-4 col-form-label">1泊あたり</label>
+            <%= f.text_field :stay_price, class:"form-control col-lg-4", id:"stay_price", placeholder:"例）3000" %>
+            <span class="align-self-center">円</span>
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">手数料 (5%)</label>
+            <span class="align-self-center col-lg-4", id='stay_fee'></span>円
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">利益／1泊</label>
+            <span class="align-self-center col-lg-4", id='stay_profit'></span>円
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-header">
+          <div class="price-text">
+            <span>日帰り</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-group d-flex">
+            <label class="col-lg-4 col-form-label">1時間あたり</label>
+            <%= f.text_field :one_day_price, class:"form-control col-lg-4", id:"one_day_price", placeholder:"例）300" %>
+            <span class="align-self-center">円</span>
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">手数料 (5%)</label>
+            <span class="align-self-center col-lg-4", id='one_day_fee'></span>円
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">利益／1h</label>
+            <span class="align-self-center col-lg-4", id='one_day_profit'></span>円
+          </div>
+        </div>
+      </div>
+    </div>
       <div class='text-center my-5'>
         <%= f.submit "登録する" ,class:"btn-lg btn-info" %>
       </div>
