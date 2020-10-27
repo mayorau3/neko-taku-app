@@ -27,7 +27,7 @@ function calc(){
   priceInput2.addEventListener('input', function(){
     price2 = this.value
     feeCalc2 = Math.floor(price2 * 0.05)
-    profitCalc2 = price - feeCalc2
+    profitCalc2 = price2 - feeCalc2
     fee2.innerHTML = feeCalc2
     profit2.innerHTML = profitCalc2
   });

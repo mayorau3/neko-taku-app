@@ -25,18 +25,16 @@
       </div>
 
       <%# 画像 %>
-      <div class="img-upload">
+      <div class="form-group">
         <div class="weight-bold-text mr-2">
           お宅画像
           <span class="text-danger">※</span>
         </div>
-        <div class="click-upload">
-          <p>
-            クリックしてファイルをアップロード
-          </p>
-          <%#= f.file_field :images, name:'item[images][]', id:"item-image" %>
+        <div class="">
+          <p><small>クリックしてファイルをアップロードしましょう。</small></p>
+          <%= f.file_field :images, name:'house[images][]', id:"house-image" %>
           <%# プレビュー画像%>
-          <div id="image-list"></div>
+          <div class="w-25", id="image-list"></div>
           <%# /プレビュー画像%>
         </div>
       </div>
