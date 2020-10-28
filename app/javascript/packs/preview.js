@@ -1,5 +1,5 @@
 if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
-  document.addEventListener('DOMContentLoaded', function(){
+  function preview(){
     const ImageList = document.getElementById('image-list');
 
     // 選択した画像を表示する関数
@@ -36,5 +36,6 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
 
       createImageHTML(blob);
     });
-  });
+  }
+  document.addEventListener('DOMContentLoaded',preview);
 }
