@@ -19,6 +19,6 @@ class HousesController < ApplicationController
   private
 
   def house_params
-    params.require(:house).permit(:pr, :explanation, :cat_history_id, :stay_price, :one_day_price, character: [], images: []).merge(user_id: current_user.id)
+    params.require(:house).permit(:pr, :explanation, :cat_history_id, :chara_stay, :chara_5min, :chara_house, :chara_floor, :chara_weekend, :chara_weekday, :chara_have_cat, :chara_tower, :chara_camera, :stay_price, :one_day_price, images: []).merge(user_id: current_user.id)
   end
 end
