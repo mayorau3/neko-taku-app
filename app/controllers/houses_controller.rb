@@ -16,6 +16,10 @@ class HousesController < ApplicationController
     end
   end
 
+  def show
+    @house = House.find(params[:id])
+  end
+
   private
 
   def house_params

@@ -1,0 +1,100 @@
+<%= render "shared/header" %>
+
+<main role="main">
+
+<div class="container text-dark">
+  <h4><%= @house.user.nickname %>さんのお宅</h4> 
+  <div class="card p-5 bg-light">
+    <h2 class="text-center"><%= @house.pr %></h2>
+
+    <% @house.images.each do |image| %>
+      <div style="width: 400px; height: 300px;" class="d-block mx-auto my-3">
+      <%= image_tag image, class:"img-fluid img-thumbnail mx-auto d-block h-100" %>
+      </div>
+    <% end %>
+    <div class="card m-5 bg-white">
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row" class="text-center">詳 細</th>
+            <td>
+              <%= @house.explanation %>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-center">住 所</th>
+            <td>
+              <p>〒<%= @house.user.zip_code %></p>
+              <%= @house.user.region.name %>
+              <%= @house.user.city %>
+              <%= @house.user.address1 %>
+              <%= @house.user.address2 %>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-center">猫 歴</th>
+            <td>
+              <%= @house.cat_history.name%>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-center">特 徴</th>
+            <td>
+              <% if @house.chara_stay == 1 %>
+                <p>お泊まり可<p>
+              <% end %>
+              <% if @house.chara_5min == 1 %>
+                <p>最寄駅から徒歩5分以内<p>
+              <% end %>
+              <% if @house.chara_house == 1 %>
+                <p>戸建て<p>
+              <% end %>
+              <% if @house.chara_floor == 1 %>
+                <p>フローリング<p>
+              <% end %>
+              <% if @house.chara_weekend == 1 %>
+                <p>土日祝日可<p>
+              <% end %>
+              <% if @house.chara_weekday == 1 %>
+                <p>平日可<p>
+              <% end %>
+              <% if @house.chara_have_cat == 1 %>
+                <p>飼い猫在り<p>
+              <% end %>
+              <% if @house.chara_tower == 1 %>
+                <p>キャットタワー有<p>
+              <% end %>
+              <% if @house.chara_camera == 1 %>
+                <p>Webカメラ有<p>
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-center">価 格</th>
+            <td>
+              <% unless @house.one_day_price == 0 || @house.one_day_price == nil %>
+                <p>日帰り 1h :
+                <%= @house.one_day_price.to_s(:delimited) %>
+                <small>円 (税込)</small></p>
+              <% end %>
+              <br>
+              <% unless @house.stay_price == 0 || @house.stay_price == nil %>
+                <p>泊まり 1stay :
+                <%= @house.stay_price.to_s(:delimited) %>
+                <small>円 (税込)</small></p>
+              <% end %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class='text-center my-5'>
+      <%= link_to "お預け予約", "#", class:"btn-lg btn-info" %>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<%= render "shared/footer" %>
