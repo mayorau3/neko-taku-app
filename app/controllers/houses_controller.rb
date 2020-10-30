@@ -1,4 +1,6 @@
 class HousesController < ApplicationController
+  before_action :set_house, only: [:show, :edit, :update]
+
   def index
     @houses = House.all.order('created_at DESC')
   end
@@ -17,12 +19,26 @@ class HousesController < ApplicationController
   end
 
   def show
-    @house = House.find(params[:id])
+  end
+
+  def edit
+  end
+
+  def update
+    if @house.update(house_params)
+      redirect_to house_path(params[:id])
+    else
+      render :edit
+    end
   end
 
   private
 
   def house_params
     params.require(:house).permit(:pr, :explanation, :cat_history_id, :chara_stay, :chara_5min, :chara_house, :chara_floor, :chara_weekend, :chara_weekday, :chara_have_cat, :chara_tower, :chara_camera, :stay_price, :one_day_price, images: []).merge(user_id: current_user.id)
+  end
+
+  def set_house
+    @house = House.find(params[:id])
   end
 end
