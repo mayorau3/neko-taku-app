@@ -3,7 +3,15 @@ FactoryBot.define do
     pr { Faker::Lorem.sentence }
     explanation { Faker::Lorem.sentence }
     cat_history_id { 6 }
-    character { 7 }
+    chara_stay { 1 }
+    chara_5min { 1 }
+    chara_house { 1 }
+    chara_floor { 1 }
+    chara_weekend { 1 }
+    chara_weekday { 1 }
+    chara_have_cat { 1 }
+    chara_tower { 1 }
+    chara_camera { 1 }
     one_day_price { 500 }
     stay_price { 3500 }
     association :user

@@ -45,13 +45,16 @@ RSpec.describe House, type: :model do
       expect(@house.errors.full_messages).to include('Cat history Select')
     end
 
-    it '特徴が空でも登録できること' do
-      @house.character = ''
-      expect(@house).to be_valid
-    end
-
-    it '特徴を複数選択しても登録できること' do
-      @house.character = [3,5]
+    it '特徴の全ての項目が空でも登録できること' do
+      @house.chara_stay = nil
+      @house.chara_5min = nil
+      @house.chara_house = nil
+      @house.chara_floor = nil
+      @house.chara_weekend = nil
+      @house.chara_weekday = nil
+      @house.chara_have_cat = nil
+      @house.chara_tower = nil
+      @house.chara_camera = nil
       expect(@house).to be_valid
     end
 
