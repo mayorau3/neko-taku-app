@@ -1,0 +1,158 @@
+<%= render "shared/header" %>
+
+<main role="main">
+
+  <%= form_with model: @house, url: houses_path, class: 'main', local: true do |f| %>
+
+  <div class="card container bg-light my-3 pt-3">
+    <div class='card-header bg-light d-flex justify-content-between align-items-center'>
+        <h3 class='text-dark ml-5'>
+          お宅情報を登録しよう。
+        </h3>
+        <small class="text-danger">※ 必須項目</small>
+    </div>
+    
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <div class='card-body w-75 mx-auto'>
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text mr-2">PR</label>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">猫の飼い主さんに向けて、PRを入力しましょう。</small>
+        </div>
+        <%= f.text_field :pr, class:"form-control", id:"pr", placeholder:"例)可愛い猫ちゃん、待ってます！", maxlength:"40" %>
+      </div>
+
+      <%# 画像 %>
+      <div class="form-group">
+        <div class="weight-bold-text mr-2">
+          お宅画像
+          <span class="text-danger">※</span>
+        </div>
+        <div class="">
+          <p><small>クリックしてファイルをアップロードしましょう。</small></p>
+          <%= f.file_field :images, name:'house[images][]', id:"house-image" %>
+          <%# プレビュー画像%>
+          <div class="w-25", id="image-list"></div>
+          <%# /プレビュー画像%>
+        </div>
+      </div>
+      <%# /画像 %>
+
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text mr-2">詳細説明</label>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">お宅について、詳しい内容を入力しましょう。</small>
+        </div>
+        <%= f.text_area :explanation, class:"form-control", id:"explanation", placeholder:"猫の飼い主さんに、どんなお宅なのか、詳細をここに記載しましょう。  例）どんなお宅なのか／どんな生活スタイルなのか／猫が喜ぶものがあるのか等", autofocus: true, rows:"7" ,maxlength:"1000" %>
+      </div>
+
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text mr-2">猫 歴</label>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">猫と暮したことのある期間を選びましょう。</small>
+        </div>
+        <%= f.collection_select(:cat_history_id, CatHistory.all, :id, :name, {}, {class:"form-control"}) %>
+      </div>
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text">特 徴</label>
+          <small class="align-self-center ml-4">当てはまるものを選びましょう。</small>
+        </div>
+        <div class="">
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_stay, {class:"my-3"}, 1, 0) %>お泊まり可
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_5min, {class:"my-3"}, 1, 0) %>最寄駅から徒歩5分以内
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_house, {class:"my-3"}, 1, 0) %>戸建て
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_floor, {class:"my-3"}, 1, 0) %>フローリング
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_weekend, {class:"my-3"}, 1, 0) %>土日祝日可
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_weekday, {class:"my-3"}, 1, 0) %>平日可
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_have_cat, {class:"my-3"}, 1, 0) %>飼い猫在り
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_tower, {class:"my-3"}, 1, 0) %>キャットタワー有
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_camera, {class:"my-3"}, 1, 0) %>Webカメラ有
+          </div>
+        </div>
+      </div>
+
+    <%# 価格 %>
+    <div class="form-group">
+      <div class="weight-bold-text question-text">
+        <span>価 格</span>
+        <small class="align-self-center ml-4 text-danger">「日帰り」「お泊まり」少なくとも一つは必ず入力しましょう。</small>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="price-text">
+            <span>日帰り</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-group d-flex">
+            <label class="col-lg-4 col-form-label">1時間あたり</label>
+            <%= f.text_field :one_day_price, class:"form-control col-lg-4", id:"price_input", placeholder:"例）300" %>
+            <span class="align-self-center">円</span>
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">手数料 (5%)</label>
+            <span class="align-self-center col-lg-4", id='fee'></span>円
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">利益／1h</label>
+            <span class="align-self-center col-lg-4", id='profit'></span>円
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-header">
+          <div class="price-text">
+            <span>お泊まり</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-group d-flex">
+            <label class="col-lg-4 col-form-label">1泊あたり</label>
+            <%= f.text_field :stay_price, class:"form-control col-lg-4", id:"price_input2", placeholder:"例）3000" %>
+            <span class="align-self-center">円</span>
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">手数料 (5%)</label>
+            <span class="align-self-center col-lg-4", id='fee2'></span>円
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">利益／1泊</label>
+            <span class="align-self-center col-lg-4", id='profit2'></span>円
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class='text-center my-5'>
+        <%= f.submit "変更する" ,class:"btn-lg btn-info" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+</main>
+
+<%= render "shared/footer" %>
+
