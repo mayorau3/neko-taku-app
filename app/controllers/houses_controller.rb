@@ -1,5 +1,6 @@
 class HousesController < ApplicationController
   before_action :set_house, only: [:show, :edit, :update]
+  before_action :search_house, only: [:index, :search]
 
   def index
     @houses = House.all.order('created_at DESC')
@@ -37,6 +38,10 @@ class HousesController < ApplicationController
     house.destroy
   end
 
+  def search
+    @results = @p.result
+  end
+
   private
 
   def house_params
@@ -45,5 +50,9 @@ class HousesController < ApplicationController
 
   def set_house
     @house = House.find(params[:id])
+  end
+
+  def search_house
+    @p = House.ransack(params[:q])
   end
 end
