@@ -3,16 +3,16 @@
 <main role="main">
 
 <div class="container text-dark">
-  <h4><%= @house.user.nickname %>さんのお宅</h4> 
+  <h4 class="mt-4"><%= @house.user.nickname %>さんのお宅</h4> 
   <div class="card p-5 bg-light">
     <h2 class="text-center"><%= @house.pr %></h2>
 
     <% @house.images.each do |image| %>
       <div style="width: 400px; height: 300px;" class="d-block mx-auto my-3">
-      <%= image_tag image, class:"img-fluid img-thumbnail mx-auto d-block h-100" %>
+      <%= image_tag image, class:"img-fluid img-thumbnail mx-auto d-block h-100 shadow" %>
       </div>
     <% end %>
-    <div class="card m-5 bg-white">
+    <div class="card m-4 bg-white">
       <table class="table">
         <tbody>
           <tr>
@@ -89,9 +89,18 @@
       </table>
     </div>
 
-    <div class='text-center my-5'>
-      <%= link_to "お預け予約", "#", class:"btn-lg btn-info" %>
-    </div>
+    <% if user_signed_in? && current_user.id == @house.user_id %>
+      <div class='text-center my-3'>
+        <%= link_to "編集する", "#", class:"btn-lg btn-secondary" %>
+      </div>
+      <div class='text-center my-3'>
+        <%= link_to "削除する", "#", class:"btn-lg btn-secondary" %>
+      </div>
+    <% else %>
+      <div class='text-center my-5'>
+        <%= link_to "お預けを予約する", "#", class:"btn-lg btn-info" %>
+      </div>
+    <% end %>
   </div>
 </div>
 
