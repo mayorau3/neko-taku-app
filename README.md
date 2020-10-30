@@ -28,7 +28,15 @@
 | pr             | text       | null: false                    |
 | explanation    | text       | null: false                    |
 | cat_history_id | integer    | null: false                    |
-| character      | integer    |                                |
+| chara_stay     | integer    |                                |
+| chara_5min     | integer    |                                |
+| chara_house    | integer    |                                |
+| chara_floor    | integer    |                                |
+| chara_weekend  | integer    |                                |
+| chara_weekday  | integer    |                                |
+| chara_have_cat | integer    |                                |
+| chara_tower    | integer    |                                |
+| chara_camera   | integer    |                                |
 | stay_price     | integer    |                                |
 | one_day_price  | integer    |                                |
 | user           | references | null: false, foreign_key: true |
