@@ -18,7 +18,7 @@
     <div class="container">
       <h3 class="py-3">預け先を探そう。</h3>
       <div class="card">
-        <div class="card-body p-5">
+        <div class="card-body px-5 py-4">
           <%= search_form_for @p, url: search_houses_path do |f| %>
             <div class="form-group d-flex">
               <div class="d-flex">
@@ -66,7 +66,7 @@
             </div>
             <div class="form-group">
               <div class="text-center">
-                <%= f.submit "見つける", class:"btn btn-info mt-3" %>
+                <%= f.submit "見つける", class:"btn btn-info" %>
               </div>
             </div>
           <% end %>
