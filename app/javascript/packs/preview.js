@@ -1,7 +1,9 @@
-if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
+//if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
   function preview(){
     const ImageList = document.getElementById('image-list');
-
+    if (!ImageList) {
+      return;
+    }
     // 選択した画像を表示する関数
     const createImageHTML = (blob) => {
       // 画像を表示するためのdiv要素を生成
@@ -38,4 +40,4 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
     });
   }
   document.addEventListener('DOMContentLoaded',preview);
-}
+//}
