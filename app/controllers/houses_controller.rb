@@ -54,5 +54,7 @@ class HousesController < ApplicationController
 
   def search_house
     @p = House.ransack(params[:q])
+    @region = Region.where.not(id: 1)
+    @cat_history = CatHistory.where.not(id: 1)
   end
 end

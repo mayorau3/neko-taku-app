@@ -24,20 +24,20 @@
               <div class="col-auto">
                 <div class="form-row">
                   <div class="col-auto">
-                    <%=f.label :user_region_id_eq, "エリア", class:"fcol-form-label" %>
+                    <%=f.label :user_region_id_eq, "エリア", class:"col-form-label" %>
                   </div>
                   <div class="col-auto">
-                    <%= f.collection_select(:user_region_id_eq, Region.all, :id, :name, {}, {class:"form-control"}) %>
+                    <%= f.collection_select(:user_region_id_eq, @region, :id, :name, {include_blank: '---'}, {class:"form-control"}) %>
                   </div>
                 </div>
               </div>
               <div class='col-aout'>
                 <div class="form-row">
                   <div class='col-aout'>
-                    <%=f.label :cat_history_id_eq, "猫 歴", class:"col-form-labe" %>
+                    <%=f.label :cat_history_id_eq, "猫 歴", class:"col-form-label" %>
                   </div>
                   <div class='col-aout'>
-                    <%= f.collection_select(:cat_history_id_eq, CatHistory.all, :id, :name, {}, {class:"form-control"}) %>
+                    <%= f.collection_select(:cat_history_id_eq, @cat_history, :id, :name, {include_blank: '---'}, {class:"form-control"}) %>
                   </div>
                 </div>
               </div>
@@ -52,40 +52,40 @@
                 <label class="col-form-label invisible">ダミー</label>
               </div>
               <div class="col">
-                <div class="form-check form-check-inline col-md-5">
-                  <%= f.check_box(:chara_stay_eq, {class:"form-check-input"}, 1, 0) %>
+                <div class="form-check form-check-inline col-md-5 pb-2">
+                  <%= f.check_box(:chara_stay_eq, {class:"form-check-input"}, 1, "") %>
                   <%= f.label :chara_stay_eq, "お泊まり可", class:"form-check-label" %>
                 </div>
-                <div class="form-check form-check-inline col-md-5">
-                  <%= f.check_box(:chara_5min_eq, {class:"my-3"}, 1, 0) %>
+                <div class="form-check form-check-inline col-md-5 pb-2">
+                  <%= f.check_box(:chara_5min_eq, {class:"form-check-input"}, 1, "") %>
                   <%= f.label :chara_5min_eq, "最寄駅から徒歩5分以内", class:"form-check-label" %>
                 </div>
-                <div class="form-check form-check-inline col-md-5">
-                  <%= f.check_box(:chara_house_eq, {class:"my-3"}, 1, 0) %>
+                <div class="form-check form-check-inline col-md-5 pb-2">
+                  <%= f.check_box(:chara_house_eq, {class:"form-check-input"}, 1, "") %>
                   <%= f.label :chara_house_eq, "戸建て", class:"form-check-label" %>
                 </div>
-                <div class="form-check form-check-inline col-md-5">
-                  <%= f.check_box(:chara_floor_eq, {class:"my-3"}, 1, 0) %>
+                <div class="form-check form-check-inline col-md-5 pb-2">
+                  <%= f.check_box(:chara_floor_eq, {class:"form-check-input"}, 1, "") %>
                   <%= f.label :chara_floor_eq, "フローリング", class:"form-check-label" %>
                 </div>
-                <div class="form-check form-check-inline col-md-5">
-                  <%= f.check_box(:chara_weekend_eq, {class:"my-3"}, 1, 0) %>
+                <div class="form-check form-check-inline col-md-5 pb-2">
+                  <%= f.check_box(:chara_weekend_eq, {class:"form-check-input"}, 1, "") %>
                   <%= f.label :chara_weekend_eq, "土日祝日可", class:"form-check-label" %>
                 </div>
-                <div class="form-check form-check-inline col-md-5">
-                  <%= f.check_box(:chara_weekday_eq, {class:"my-3"}, 1, 0) %>
+                <div class="form-check form-check-inline col-md-5 pb-2">
+                  <%= f.check_box(:chara_weekday_eq, {class:"form-check-input"}, 1, "") %>
                   <%= f.label :chara_weekday_eq, "平日可", class:"form-check-label" %>
                 </div>
-                <div class="form-check form-check-inline col-md-5">
-                  <%= f.check_box(:chara_have_cat_eq, {class:"my-3"}, 1, 0) %>
+                <div class="form-check form-check-inline col-md-5 pb-2">
+                  <%= f.check_box(:chara_have_cat_eq, {class:"form-check-input"}, 1, "") %>
                   <%= f.label :chara_have_cat_eq, "飼い猫在り", class:"form-check-label" %>
                 </div>
-                <div class="form-check form-check-inline col-md-5">
-                  <%= f.check_box(:chara_tower_eq, {class:"my-3"}, 1, 0) %>
+                <div class="form-check form-check-inline col-md-5 pb-2">
+                  <%= f.check_box(:chara_tower_eq, {class:"form-check-input"}, 1, "") %>
                   <%= f.label :chara_tower_eq, "キャットタワー有", class:"form-check-label" %>
                 </div>
-                <div class="form-check form-check-inline col-md-5">
-                  <%= f.check_box(:chara_camera_eq, {class:"my-3"}, 1, 0) %>
+                <div class="form-check form-check-inline col-md-5 pb-2">
+                  <%= f.check_box(:chara_camera_eq, {class:"form-check-input"}, 1, "") %>
                   <%= f.label :chara_camera_eq, "Webカメラ有", class:"form-check-label" %>
                 </div>
               </div>
