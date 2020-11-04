@@ -53,9 +53,9 @@
         <div class='d-flex'>
           <label class="form-text mr-2">年 齢</label>
           <span class="text-danger">※</span>
-          <small class="align-self-center ml-4">My猫の年齢を入力しましょう。</small>
+          <small class="align-self-center ml-4">My猫の年齢に近いものを選びましょう。</small>
         </div>
-        <%= f.collection_select(:cat_history_id, CatHistory.all, :id, :name, {}, {class:"form-control"}) %>
+        <%= f.collection_select(:age_id, Age.all, :id, :name, {}, {class:"form-control"}) %>
       </div>
       <div class="form-group">
         <div class='d-flex'>

@@ -1,7 +1,10 @@
 class Cat < ApplicationRecord
   belongs_to :user
   has_many :reservations
- # has_many_attached :images
+  has_many_attached :images
+
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to_active_hash :age
 
   validates :name, :age_id, :sex, :explanation, :images, presence: true
 
