@@ -1,5 +1,6 @@
 class CatsController < ApplicationController
-
+  before_action :authenticate_user!, only: :new
+  
   def new
     @cat = Cat.new
   end
