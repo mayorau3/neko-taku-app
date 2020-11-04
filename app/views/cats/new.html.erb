@@ -59,11 +59,11 @@
       </div>
       <div class="form-group">
         <div class='d-flex'>
-          <label class="form-text mr-2">性 別</label>
+          <%= f.label :sex, "性別", class:"form-text mr-2" %>
           <span class="text-danger">※</span>
           <small class="align-self-center ml-4">My猫の性別を選びましょう。</small>
         </div>
-        <%= f.collection_select(:cat_history_id, CatHistory.all, :id, :name, {}, {class:"form-control"}) %>
+        <%= f.select(:sex, {"オス": 1, "メス": 2}, {include_blank: "---"}, {class:"form-control"}) %>
       </div>
       <div class="form-group">
         <div class='d-flex'>
