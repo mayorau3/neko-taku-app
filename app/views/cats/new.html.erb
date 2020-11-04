@@ -1,0 +1,116 @@
+<%= render "shared/header" %>
+
+<main role="main">
+
+  <%= form_with model: @cat, url: cats_path, class: 'main', local: true do |f| %>
+
+  <div class="card container bg-light my-3 pt-3">
+    <div class='card-header bg-light d-flex justify-content-between align-items-center'>
+        <h3 class='text-dark ml-5'>
+          My猫情報を登録しよう。
+        </h3>
+        <small class="text-danger">※ 必須項目</small>
+    </div>
+    
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <div class='card-body w-75 mx-auto'>
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text mr-2">お名前</label>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">猫の名前を入力しましょう。</small>
+        </div>
+        <%= f.text_field :name, class:"form-control", id:"name", placeholder:"例)たま子", maxlength:"10" %>
+      </div>
+
+      <%# 画像 %>
+      <div class="form-group">
+        <div class="weight-bold-text mr-2">
+          My猫画像
+          <span class="text-danger">※</span>
+        </div>
+        <div class="">
+          <p><small>クリックしてファイルをアップロードしましょう。</small></p>
+          <%= f.file_field :images, name:'cat[images][]', id:"storage-image" %>
+          <%# プレビュー画像%>
+          <div class="w-25", id="image-list"></div>
+          <%# /プレビュー画像%>
+        </div>
+      </div>
+      <%# /画像 %>
+
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text mr-2">詳細説明</label>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">My猫について、詳しい内容を入力しましょう。</small>
+        </div>
+        <%= f.text_area :explanation, class:"form-control", id:"explanation", placeholder:"My猫の詳細をここに記載しましょう。  例）どんな性格の子なのか／どんな生活スタイルなのか／猫が喜ぶもの等", autofocus: true, rows:"7" ,maxlength:"1000" %>
+      </div>
+
+      <div class="form-group">
+        <div class='d-flex'>
+          <%= f.label :age_id, "年 齢", class:"form-text mr-2" %>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">My猫の年齢に近いものを選びましょう。</small>
+        </div>
+        <%= f.collection_select(:age_id, Age.all, :id, :name, {}, {class:"form-control"}) %>
+      </div>
+      <div class="form-group">
+        <div class='d-flex'>
+          <%= f.label :sex, "性 別", class:"form-text mr-2" %>
+          <span class="text-danger">※</span>
+          <small class="align-self-center ml-4">My猫の性別を選びましょう。</small>
+        </div>
+        <%= f.select(:sex, {"オス": 1, "メス": 2}, {include_blank: "---"}, {class:"form-control"}) %>
+      </div>
+      <div class="form-group">
+        <div class='d-flex'>
+          <label class="form-text">特 徴</label>
+          <small class="align-self-center ml-4">当てはまるものを選びましょう。</small>
+        </div>
+        <div class="">
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_clever, {class:"my-3"}, 1, 0) %>
+            <%= f.label :chara_clever, "お利口", class:"form-check-label" %>
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_sleep, {class:"my-3"}, 1, 0) %>
+            <%= f.label :chara_sleep, "よく寝る", class:"form-check-label" %>
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_active, {class:"my-3"}, 1, 0) %>
+            <%= f.label :chara_active, "わんぱく", class:"form-check-label" %>
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_quiet, {class:"my-3"}, 1, 0) %>
+            <%= f.label :chara_quiet, "おとなしい", class:"form-check-label" %>
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_greedy, {class:"my-3"}, 1, 0) %>
+            <%= f.label :chara_greedy, "食いしん坊", class:"form-check-label" %>
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_lonely, {class:"my-3"}, 1, 0) %>
+            <%= f.label :chara_lonely, "甘えん坊", class:"form-check-label" %>
+          </div>
+          <div class="form-check form-check-inline col-md-4 ml-5">
+            <%= f.check_box(:chara_own, {class:"my-3"}, 1, 0) %>
+            <%= f.label :chara_own, "マイペース", class:"form-check-label" %>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='text-center my-5'>
+        <%= f.submit "登録する" ,class:"btn-lg btn-info" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+</main>
+
+<%= render "shared/footer" %>
+
