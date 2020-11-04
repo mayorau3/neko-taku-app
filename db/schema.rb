@@ -35,9 +35,15 @@ ActiveRecord::Schema.define(version: 2020_10_27_033202) do
 
   create_table "cats", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
-    t.integer "age", null: false
+    t.integer "age_id", null: false
     t.integer "sex", null: false
-    t.integer "character"
+    t.integer "chara_clever"
+    t.integer "chara_sleep"
+    t.integer "chara_active"
+    t.integer "chara_quiet"
+    t.integer "chara_greedy"
+    t.integer "chara_lonely"
+    t.integer "chara_own"
     t.text "explanation", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

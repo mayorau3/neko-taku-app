@@ -48,14 +48,20 @@
 
 ## cats テーブル
 
-| Column      | Type       | Options                        |
-| ----------- | ---------- | ------------------------------ |
-| name        | string     | null: false                    |
-| age         | integer    | null: false                    |
-| sex         | integer    | null: false                    |
-| character   | integer    |                                |
-| explanation | text       | null: false                    |
-| user        | references | null: false, foreign_key: true |
+| Column       | Type       | Options                        |
+| ------------ | ---------- | ------------------------------ |
+| name         | string     | null: false                    |
+| age_id       | integer    | null: false                    |
+| sex          | integer    | null: false                    |
+| chara_clever | integer    |                                |
+| chara_sleep  | integer    |                                |
+| chara_active | integer    |                                |
+| chara_quiet  | integer    |                                |
+| chara_greedy | integer    |                                |
+| chara_lonely | integer    |                                |
+| chara_own    | integer    |                                |
+| explanation  | text       | null: false                    |
+| user         | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
