@@ -1,6 +1,7 @@
 class Cat < ApplicationRecord
   belongs_to :user
   has_many :reservations
+ # has_many_attached :images
 
   validates :name, :age_id, :sex, :explanation, :images, presence: true
 
