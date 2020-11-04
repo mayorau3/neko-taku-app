@@ -6,5 +6,5 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
-  resources :cats, only: :new
+  resources :cats, only: [:new, :create]
 end
