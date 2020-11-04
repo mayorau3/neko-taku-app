@@ -1,6 +1,7 @@
 class HousesController < ApplicationController
   before_action :set_house, only: [:show, :edit, :update]
   before_action :search_house, only: [:index, :search]
+  before_action :authenticate_user!, only: :new
 
   def index
     @houses = House.all.order('created_at DESC')
