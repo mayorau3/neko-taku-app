@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
+    resources :reservations, only: [:new, :create]
   end
   resources :cats, only: [:new, :create]
 end
