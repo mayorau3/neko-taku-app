@@ -1,0 +1,51 @@
+<%= render "shared/header" %>
+
+<main role="main">
+
+  <%= form_with model: @reservation, url: house_reservations_path(@house.id), class: 'main', local: true do |f| %>
+
+  <div class="card container bg-light my-3 pt-3">
+    <div class='card-header bg-light d-flex justify-content-between align-items-center'>
+        <h3 class='text-dark ml-5'>
+          お宅を予約しよう。
+        </h3>
+        <small class="text-danger">※ 必須項目</small>
+    </div>
+    
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <div class='card-body w-75 mx-auto'>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="price-text">
+            <span>予約者情報</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-group d-flex">
+            <label class="col-lg-4 col-form-label">ニックネーム</label>
+            <span class="align-self-center"><%= @reservation.user.nickname %></span>
+          </div>
+          <div class="form-group d-flex">
+            <label class="col-lg-4 col-form-label">名前（姓）</label>
+            <span class="align-self-center"><%= @reservation.user.kanji_family_name %></span>
+          </div>
+          <div class="form-group d-flex">
+            <label class="col-lg-4 col-form-label">名前（名）</label>
+            <span class="align-self-center"><%= @reservation.user.kanji_first_name %></span>
+          </div>
+        </div>
+      </div>
+
+      <div class='text-center my-5'>
+        <%= f.submit "登録する" ,class:"btn-lg btn-info" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+</main>
+
+<%= render "shared/footer" %>
+
