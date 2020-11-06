@@ -1,7 +1,6 @@
 class Reservation < ApplicationRecord
   belongs_to :user
   belongs_to :house
-  belongs_to :cat
 
   validates :start_date, :message, presence: true
 

@@ -7,7 +7,6 @@ class CreateReservations < ActiveRecord::Migration[6.0]
       t.text       :message,      null: false
       t.references :user,         null: false, foreign_key: true
       t.references :house,        null: false, foreign_key: true
-      t.references :cat,          null: false, foreign_key: true
       t.timestamps
     end
   end

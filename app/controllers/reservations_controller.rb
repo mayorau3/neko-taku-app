@@ -18,7 +18,7 @@ class ReservationsController < ApplicationController
   private
 
   def reservation_params
-    params.require(:reservation).permit(:start_date, :stay_days, :one_day_hours, :message).merge(user_id: current_user.id, house_id: params[:house_id], cat_id: params[:cat_id])
+    params.require(:reservation).permit(:start_date, :stay_days, :one_day_hours, :message).merge(user_id: current_user.id, house_id: params[:house_id])
   end
 
   def set_house
