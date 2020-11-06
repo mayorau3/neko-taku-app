@@ -2,12 +2,12 @@
 
 <main role="main">
 
-  <%= form_with model: @reservation, url: "/houses/:house_id/reservations", class: 'main', local: true do |f| %>
+  <%= form_with model: @reservation, url: house_reservations_path(@house.id), class: 'main', local: true do |f| %>
 
   <div class="card container bg-light my-3 pt-3">
     <div class='card-header bg-light d-flex justify-content-between align-items-center'>
         <h3 class='text-dark ml-5'>
-          お宅を予約しよう。
+          <%= @house.user.nickname %>さんのお宅を予約しよう。
         </h3>
         <small class="text-danger">※ 必須項目</small>
     </div>
@@ -55,12 +55,8 @@
             <span></span>
           </div>
           <div class="form-group d-flex">
-            <label class="col-lg-4 col-form-label">名前（姓）</label>
-            <span class="align-self-center"><%= current_user.kanji_family_name %></span>
-          </div>
-          <div class="form-group d-flex">
-            <label class="col-lg-4 col-form-label">名前（名）</label>
-            <span class="align-self-center"><%= current_user.kanji_first_name %></span>
+            <label class="col-lg-4 col-form-label">名前</label>
+            <span class="align-self-center"><%= current_user.kanji_family_name %> <%= current_user.kanji_first_name %></span>
           </div>
           <div class="form-group d-flex">
             <label class="col-lg-4 col-form-label">メールアドレス</label>
