@@ -16,10 +16,10 @@
 
       <div class="card mb-3 shadow" >
         <div class="row no-gutters">
-          <div class="col-md-4">
-            <%= image_tag @house.images.first, class:"bd-placeholder-img", width: "100%", height: "250" %>
+          <div class="col-lg-4">
+            <%= image_tag @house.images.first, width: "100%", height: "250" %>
           </div>
-          <div class="col-md-8">
+          <div class="col-lg-8">
             <div class="card-body">
               <h5 class="card-title"><%= @house.user.nickname %>さんのお宅</h5>
               <p class="card-text"><%= @house.pr %></p>
@@ -95,29 +95,31 @@
           </div>
         </div>
         <div class="card-body">
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">ニックネーム</label>
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">ニックネーム</label>
             <span class="align-self-center"><%= current_user.nickname %></span>
             <span></span>
           </div>
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">名前</label>
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">名前</label>
             <span class="align-self-center"><%= current_user.kanji_family_name %> <%= current_user.kanji_first_name %></span>
           </div>
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">メールアドレス</label>
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">メールアドレス</label>
             <span class="align-self-center"><%= current_user.email %></span>
           </div>
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">住 所</label>
-            <span class="align-self-center"><%= current_user.zip_code %></span>
-            <span class="align-self-center"><%= current_user.region.name %></span>
-            <span class="align-self-center"><%= current_user.city %></span>
-            <span class="align-self-center"><%= current_user.address1 %></span>
-            <span class="align-self-center"><%= current_user.address2 %></span>
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">住 所</label>
+            <div>
+              <p class="align-self-center">〒<%= current_user.zip_code %></p>
+              <span class="align-self-center"><%= current_user.region.name %></span>
+              <span class="align-self-center"><%= current_user.city %></span>
+              <span class="align-self-center"><%= current_user.address1 %></span>
+              <p class="align-self-center pl-2"><%= current_user.address2 %></p>
+            </div>
           </div>
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">電話番号</label>
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">電話番号</label>
             <span class="align-self-center"><%= current_user.phone %></span>
           </div>
         </div>
@@ -129,55 +131,62 @@
             <span>お預けする猫情報</span>
           </div>
         </div>
-        <div class="card-body">
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">お名前</label>
-            <span class="align-self-center"><%= @cat.name %></span>
-            <span></span>
+        <div class="card-body row">
+          <div class="col-lg-4">
+            <%= image_tag @cat.images.first, width: "100%", height: "250" %>
           </div>
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">年 齢</label>
-            <span class="align-self-center"><%= @cat.age.name %></span>
-          </div>
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">性 別</label>
-            <span class="align-self-center">
-              <% if @cat.sex == 1 %>
-                オス
-              <% elsif @cat.sex == 2 %>
-                メス
-              <% end %>
-            </span>
-          </div>
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">性 格</label>
-            <span class="align-self-center">
-              <% if @cat.chara_clever == 1 %>
-                <p>お利口</p>
-              <% end %>
-              <% if @cat.chara_sleep == 1 %>
-                <p>よく寝る</p>
-              <% end %>
-              <% if @cat.chara_active == 1 %>
-                <p>わんぱく</p>
-              <% end %>
-              <% if @cat.chara_quiet == 1 %>
-                <p>おとなしい</p>
-              <% end %>
-              <% if @cat.chara_greedy == 1 %>
-                <p>食いしん坊</p>
-              <% end %>
-              <% if @cat.chara_lonely == 1 %>
-                <p>甘えん坊</p>
-              <% end %>
-              <% if @cat.chara_own == 1 %>
-                <p>マイペース</p>
-              <% end %>
-            </span>
-          </div>
-          <div class="form-group d-lg-flex">
-            <label class="col-lg-4 col-form-label">詳細説明</label>
-            <span class="align-self-center"><%= @cat.explanation %></span>
+          <div class="col-lg-8">
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">お名前</label>
+              <span class="align-self-center"><%= @cat.name %></span>
+              <span></span>
+            </div>
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">年 齢</label>
+              <span class="align-self-center"><%= @cat.age.name %></span>
+            </div>
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">性 別</label>
+              <span class="align-self-center">
+                <% if @cat.sex == 1 %>
+                  オス
+                <% elsif @cat.sex == 2 %>
+                  メス
+                <% end %>
+              </span>
+            </div>
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">性 格</label>
+              <div>
+                <span class="align-self-center">
+                  <% if @cat.chara_clever == 1 %>
+                    <p>お利口</p>
+                  <% end %>
+                  <% if @cat.chara_sleep == 1 %>
+                    <p>よく寝る</p>
+                  <% end %>
+                  <% if @cat.chara_active == 1 %>
+                    <p>わんぱく</p>
+                  <% end %>
+                  <% if @cat.chara_quiet == 1 %>
+                    <p>おとなしい</p>
+                  <% end %>
+                  <% if @cat.chara_greedy == 1 %>
+                    <p>食いしん坊</p>
+                  <% end %>
+                  <% if @cat.chara_lonely == 1 %>
+                    <p>甘えん坊</p>
+                  <% end %>
+                  <% if @cat.chara_own == 1 %>
+                    <p>マイペース</p>
+                  <% end %>
+                </span>
+              </div>
+            </div>
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">詳細説明</label>
+              <span class="align-self-center"><%= @cat.explanation %></span>
+            </div>
           </div>
         </div>
       </div>
