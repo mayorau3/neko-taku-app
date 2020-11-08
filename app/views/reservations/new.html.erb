@@ -29,47 +29,61 @@
                   <span>日帰り 1h :
                   <%= @house.one_day_price.to_s(:delimited) %>
                   <small>円 (税込)</small></span>
-                <% else %>
-                  <span class="text-white">blank</span>
+                  <div class="invisible" id="one_day_price" value="<%= @house.one_day_price %>"></div>
                 <% end %>
                 <br>
                 <% unless @house.stay_price == 0 || @house.stay_price == nil %>
                   <span>泊まり 1stay :
                   <%= @house.stay_price.to_s(:delimited) %>
                   <small>円 (税込)</small></span>
-                <% else %>
-                  <span class="text-white">blank</span>
+                  <div class="invisible" id="stay_price" value="<%= @house.stay_price %>"></div>
                 <% end %>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      <br>
       <div class="card shadow">
         <div class="card-header">
           <div class="price-text">
             <span>予約内容</span>
           </div>
         </div>
+
         <div class="card-body">
           <div class="form-group d-md-flex">
-            <label class="col-lg-4 col-form-label">お預け日</label>
+            <div class="col-lg-4">
+            <label class="col-form-label">お預け日</label>
+            <span class="text-danger">※</span>
+            </div>
             <%= f.date_field :start_date ,class: "col-lg-3 align-self-center form-control" %>
           </div>
+
+          <small class="ml-2 text-danger">「日帰り滞在時間」または「お泊まり日数」どちらか入力しましょう。</small>
           <div class="form-group d-md-flex">
             <label class="col-lg-4 col-form-label">日帰り滞在時間</label>
-            <%= f.text_field :one_day_hours ,class: "col-lg-3 align-self-center form-control" %>
+            <%= f.text_field :one_day_hours ,class: "col-lg-3 align-self-center form-control", id: "one_day_hours" %>
             <span class="align-self-center">時間</span>
           </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">日帰り合計価格</label>
+            <span class="align-self-center col-lg-3", id='price_output'></span>円
+          </div>
+
           <div class="form-group d-md-flex">
             <label class="col-lg-4 col-form-label">お泊まり日数</label>
-            <%= f.text_field :stay_days ,class: "col-lg-3 align-self-center form-control" %>
+            <%= f.text_field :stay_days ,class: "col-lg-3 align-self-center form-control", id: "stay_days" %>
             <span class="align-self-center">日間</span>
           </div>
-          <div class="form-group d-md-flex">
-            <label class="col-lg-4 col-form-label">メッセージ</label>
-            <%= f.text_area :message, class:"align-self-center form-control" %>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">お泊まり合計価格</label>
+            <span class="align-self-center col-lg-3", id='price_output2'></span>円
+          </div>
+          <div class="form-group ml-3">
+            <label class="col-form-label">メッセージ</label>
+            <span class="text-danger">※</span>
+            <%= f.text_area :message, class:"align-self-center form-control", placeholder:"お宅の家主さんにメッセージを送りましょう。  例）2日間お預かりお願いできますでしょうか？", autofocus: true, rows:"7" ,maxlength:"1000" %>
           </div>
         </div>
       </div>
