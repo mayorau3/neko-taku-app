@@ -25,6 +25,9 @@ class ReservationsController < ApplicationController
 
   def set_house
     @house = House.find(params[:house_id])
+    if current_user.id == @house.user_id
+      redirect_to root_path
+    end
   end
 
   def set_cat
