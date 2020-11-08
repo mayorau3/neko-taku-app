@@ -1,6 +1,8 @@
 class ReservationsController < ApplicationController
   before_action :set_house
   before_action :set_cat
+  before_action :authenticate_user!
+
 
   def new
     @reservation = Reservation.new

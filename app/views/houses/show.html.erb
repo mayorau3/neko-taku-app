@@ -89,7 +89,7 @@
       </table>
     </div>
 
-    <% if user_signed_in? && current_user.id == @house.user_id %>
+    <% if current_user.id == @house.user_id %>
       <div class='text-center my-3'>
         <%= link_to "編集する", edit_house_path(@house.id), method: :get, class:"btn-lg btn-secondary" %>
       </div>
