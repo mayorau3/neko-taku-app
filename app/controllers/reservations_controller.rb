@@ -28,6 +28,10 @@ class ReservationsController < ApplicationController
   end
 
   def set_cat
-    @cat = Cat.find(current_user.id)
+    if Cat.find_by(user_id: current_user.id)
+      @cat = Cat.find_by(user_id: current_user.id)
+    else
+      redirect_to new_cat_path
+    end
   end
 end
