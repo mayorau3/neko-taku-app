@@ -3,15 +3,14 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :region
-
 
   validates :nickname, presence: true
 
   # パスワード半角英数字混合
-  PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i.freeze
+  PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
   validates_format_of :password, with: PASSWORD_REGEX, message: 'Include both letters and numbers'
 
   # 名前漢字・平仮名・カタカナ
@@ -27,12 +26,10 @@ class User < ApplicationRecord
     # 「電話番号」に関するバリデーション
     validates :phone, length: { maximum: 11 }
   end
-    # 「住所」の都道府県に関するバリデーション 選択が「---」の時は保存できない
-    validates :region_id, numericality: { other_than: 1, message: 'Select' }
+  # 「住所」の都道府県に関するバリデーション 選択が「---」の時は保存できない
+  validates :region_id, numericality: { other_than: 1, message: 'Select' }
 
   has_one :house
   has_many :cats
   has_many :reservations
-
-
 end

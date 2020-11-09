@@ -76,17 +76,5 @@ RSpec.describe House, type: :model do
       @house.stay_price = nil
       expect(@house).to be_valid
     end
-
-    it '日帰り価格が全角数字だと登録できないこと' do
-      @house.one_day_price = '１２３４５'
-      @house.valid?
-      expect(@house.errors.full_messages).to include("One day price Half-width number")
-    end
-
-    it 'お泊まり価格が全角数字だと登録できないこと' do
-      @house.stay_price = '１２３４５'
-      @house.valid?
-      expect(@house.errors.full_messages).to include("Stay price Half-width number")
-    end
   end
 end

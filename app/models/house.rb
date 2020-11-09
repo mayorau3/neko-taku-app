@@ -13,13 +13,10 @@ class House < ApplicationRecord
 
   # 価格 日帰り、お泊まり、どちらか片方入力必須にする
   validates :stay_or_one_day, presence: true
-  # 価格 半角数字のみ可
-  validates :one_day_price, format: { with: /\A.[0-9]+\z/, message: 'Half-width number' }, unless: ->{ one_day_price.blank?}
-  validates :stay_price, format: { with: /\A.[0-9]+\z/, message: 'Half-width number' }, unless: ->{ stay_price.blank?}
 
   private
-    def stay_or_one_day
-      stay_price.presence or one_day_price.presence
-    end
 
+  def stay_or_one_day
+    stay_price.presence or one_day_price.presence
+  end
 end

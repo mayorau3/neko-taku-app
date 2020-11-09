@@ -8,6 +8,7 @@ class Reservation < ApplicationRecord
   validates :either_stay_or_one_day, presence: { message: '/ Only one of them' }
 
   private
+
   def either_stay_or_one_day
     stay_days.present? ^ one_day_hours.present?
   end
