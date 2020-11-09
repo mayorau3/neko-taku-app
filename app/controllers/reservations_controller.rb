@@ -25,13 +25,13 @@ class ReservationsController < ApplicationController
 
   def set_house
     @house = House.find(params[:house_id])
-    if current_user.id == @house.user_id
+    if user_signed_in? && current_user.id == @house.user_id
       redirect_to root_path
     end
   end
 
   def set_cat
-    if Cat.find_by(user_id: current_user.id)
+    if user_signed_in? && Cat.find_by(user_id: current_user.id)
       @cat = Cat.find_by(user_id: current_user.id)
     else
       redirect_to new_cat_path
