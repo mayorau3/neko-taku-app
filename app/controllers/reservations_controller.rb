@@ -9,9 +9,7 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
-    if @reservation.save
-      redirect_to root_path
-    else
+    unless @reservation.save
       render :new
     end
   end
@@ -24,11 +22,13 @@ class ReservationsController < ApplicationController
 
   def set_house
     @house = House.find(params[:house_id])
-    redirect_to root_path if user_signed_in? && current_user.id == @house.user_id
+    if current_user.id == @house.user_id
+      redirect_to root_path
+    end
   end
 
   def set_cat
-    if user_signed_in? && Cat.find_by(user_id: current_user.id)
+    if Cat.find_by(user_id: current_user.id)
       @cat = Cat.find_by(user_id: current_user.id)
     else
       redirect_to new_cat_path
