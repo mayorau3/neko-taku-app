@@ -5,7 +5,7 @@ class Reservation < ApplicationRecord
   validates :start_date, :message, presence: true
 
   # 日帰り滞在時間、お泊まり日数、どちらか片方だけ入力必須にする 両方はダメ
-  validates :either_stay_or_one_day, presence: { message: ' / Only one of them' }
+  validates :either_stay_or_one_day, presence: { message: '/ Only one of them' }
 
   private
   def either_stay_or_one_day

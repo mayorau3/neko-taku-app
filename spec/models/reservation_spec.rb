@@ -20,7 +20,14 @@ RSpec.describe Reservation, type: :model do
       @reservation.one_day_hours = nil
       @reservation.stay_days = nil
       @reservation.valid?
-      expect(@reservation.errors.full_messages).to include("Stay or one day can't be blank")
+      expect(@reservation.errors.full_messages).to include("Either stay or one day / Only one of them")
+    end
+
+    it '日帰り滞在時間、お泊まり日数が両方とも入力があると登録できないこと' do
+      @reservation.one_day_hours = '2'
+      @reservation.stay_days = '3'
+      @reservation.valid?
+      expect(@reservation.errors.full_messages).to include("Either stay or one day / Only one of them")
     end
 
     it '日帰り滞在時間が空でもお泊まり日数に入力があれば登録できること' do
