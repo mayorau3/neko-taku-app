@@ -7,6 +7,6 @@ class Age < ActiveHash::Base
     { id: 5, name: '2歳〜5歳' },
     { id: 6, name: '5歳〜10歳' },
     { id: 7, name: '10歳〜15歳' },
-    { id: 8, name: '15歳以上' },
+    { id: 8, name: '15歳以上' }
   ]
 end

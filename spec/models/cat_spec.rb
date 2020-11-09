@@ -44,7 +44,7 @@ RSpec.describe Cat, type: :model do
       @cat.valid?
       expect(@cat.errors.full_messages).to include('Age Select')
     end
-    
+
     it '性別が空(=「---」の時)では登録できないこと' do
       @cat.sex = nil
       @cat.valid?
@@ -61,6 +61,5 @@ RSpec.describe Cat, type: :model do
       @cat.chara_own = nil
       expect(@cat).to be_valid
     end
-
   end
 end

@@ -3,7 +3,6 @@ class ReservationsController < ApplicationController
   before_action :set_cat
   before_action :authenticate_user!
 
-
   def new
     @reservation = Reservation.new
   end
@@ -25,9 +24,7 @@ class ReservationsController < ApplicationController
 
   def set_house
     @house = House.find(params[:house_id])
-    if user_signed_in? && current_user.id == @house.user_id
-      redirect_to root_path
-    end
+    redirect_to root_path if user_signed_in? && current_user.id == @house.user_id
   end
 
   def set_cat

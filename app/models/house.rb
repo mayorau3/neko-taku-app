@@ -15,8 +15,8 @@ class House < ApplicationRecord
   validates :stay_or_one_day, presence: true
 
   private
-    def stay_or_one_day
-      stay_price.presence or one_day_price.presence
-    end
 
+  def stay_or_one_day
+    stay_price.presence or one_day_price.presence
+  end
 end

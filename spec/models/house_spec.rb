@@ -76,6 +76,5 @@ RSpec.describe House, type: :model do
       @house.stay_price = nil
       expect(@house).to be_valid
     end
-
   end
 end
