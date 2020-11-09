@@ -106,9 +106,9 @@
 
       <div class="row">
         <% @houses.each do |house| %>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="card mb-4 shadow">
-            <%= image_tag house.images.first, class:"card-img-top", height: "225" %>
+            <%= image_tag house.images.first, class:"card-img-top" %>
             <div class="card-body">
               <p class="card-text"><%= house.pr %></p>
               <div class="price mx-auto" style="width: 260px;">
