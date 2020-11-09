@@ -89,7 +89,7 @@
       </table>
     </div>
 
-    <% if user_signed_in? && current_user.id == @house.user_id %>
+    <% if current_user.id == @house.user_id %>
       <div class='text-center my-3'>
         <%= link_to "編集する", edit_house_path(@house.id), method: :get, class:"btn-lg btn-secondary" %>
       </div>
@@ -98,7 +98,7 @@
       </div>
     <% else %>
       <div class='text-center my-5'>
-        <%= link_to "お預けを予約する", "#", class:"btn-lg btn-info" %>
+        <%= link_to "お預け予約ページへ", new_house_reservation_path(@house.id), class:"btn-lg btn-info" %>
       </div>
     <% end %>
   </div>

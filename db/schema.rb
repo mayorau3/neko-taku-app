@@ -79,10 +79,8 @@ ActiveRecord::Schema.define(version: 2020_10_27_033202) do
     t.text "message", null: false
     t.bigint "user_id", null: false
     t.bigint "house_id", null: false
-    t.bigint "cat_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["cat_id"], name: "index_reservations_on_cat_id"
     t.index ["house_id"], name: "index_reservations_on_house_id"
     t.index ["user_id"], name: "index_reservations_on_user_id"
   end
@@ -109,7 +107,6 @@ ActiveRecord::Schema.define(version: 2020_10_27_033202) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "cats", "users"
   add_foreign_key "houses", "users"
-  add_foreign_key "reservations", "cats"
   add_foreign_key "reservations", "houses"
   add_foreign_key "reservations", "users"
 end

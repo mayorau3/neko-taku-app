@@ -65,7 +65,6 @@
 
 ### Association
 - belongs_to :user
-- has_many :reservations
 
 ## reservations テーブル
 
@@ -77,9 +76,7 @@
 | message       | text       | null: false                    |
 | user          | references | null: false, foreign_key: true |
 | house         | references | null: false, foreign_key: true |
-| cat           | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
 - belongs_to :house
-- belongs_to :cat

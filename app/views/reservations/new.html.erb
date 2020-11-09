@@ -1,0 +1,204 @@
+<%= render "shared/header" %>
+
+<main role="main">
+
+  <%= form_with model: @reservation, url: house_reservations_path(@house.id), class: 'main', local: true do |f| %>
+
+  <div class="card container bg-light my-3 pt-3">
+    <div class='card-header bg-light d-flex justify-content-between align-items-center'>
+        <h3 class='text-dark ml-5'>お宅を予約しよう。</h3>
+        <small class="text-danger">※ 必須項目</small>
+    </div>
+    
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <div class='card-body w-75 mx-auto'>
+
+      <div class="card mb-3 shadow" >
+        <div class="row no-gutters">
+          <div class="col-lg-4">
+            <%= image_tag @house.images.first, width: "100%", height: "250" %>
+          </div>
+          <div class="col-lg-8">
+            <div class="card-body">
+              <h5 class="card-title"><%= @house.user.nickname %>さんのお宅</h5>
+              <p class="card-text"><%= @house.pr %></p>
+              <p class="card-text"><%= @house.explanation %></p>
+              <div class="price mx-auto" style="width: 260px;">
+                <% unless @house.one_day_price == 0 || @house.one_day_price == nil %>
+                  <span>日帰り 1h :
+                  <%= @house.one_day_price.to_s(:delimited) %>
+                  <small>円 (税込)</small></span>
+                  <div class="invisible" id="one_day_price" value="<%= @house.one_day_price %>"></div>
+                <% end %>
+                <br>
+                <% unless @house.stay_price == 0 || @house.stay_price == nil %>
+                  <span>泊まり 1stay :
+                  <%= @house.stay_price.to_s(:delimited) %>
+                  <small>円 (税込)</small></span>
+                  <div class="invisible" id="stay_price" value="<%= @house.stay_price %>"></div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card shadow">
+        <div class="card-header">
+          <div class="price-text">
+            <span>予約内容</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="form-group d-md-flex">
+            <div class="col-lg-4">
+            <label class="col-form-label">お預け日</label>
+            <span class="text-danger">※</span>
+            </div>
+            <%= f.date_field :start_date ,class: "col-lg-3 align-self-center form-control" %>
+          </div>
+
+          <small class="ml-2 text-danger">「日帰り滞在時間」または「お泊まり日数」どちらか入力しましょう。</small>
+          <div class="form-group d-md-flex">
+            <label class="col-lg-4 col-form-label">日帰り滞在時間</label>
+            <%= f.number_field :one_day_hours ,class: "col-lg-3 align-self-center form-control", id: "one_day_hours" %>
+            <span class="align-self-center">時間</span>
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">日帰り合計価格</label>
+            <span class="align-self-center col-lg-3", id='price_output'></span>円
+          </div>
+
+          <div class="form-group d-md-flex">
+            <label class="col-lg-4 col-form-label">お泊まり日数</label>
+            <%= f.number_field :stay_days ,class: "col-lg-3 align-self-center form-control", id: "stay_days" %>
+            <span class="align-self-center">日間</span>
+          </div>
+          <div class="form-group d-flex border-bottom">
+            <label class="col-lg-4 col-form-label">お泊まり合計価格</label>
+            <span class="align-self-center col-lg-3", id='price_output2'></span>円
+          </div>
+          <div class="form-group ml-3">
+            <label class="col-form-label">メッセージ</label>
+            <span class="text-danger">※</span>
+            <%= f.text_area :message, class:"align-self-center form-control", placeholder:"お宅の家主さんにメッセージを送りましょう。  例）2日間お預かりお願いできますでしょうか？", autofocus: true, rows:"7" ,maxlength:"1000" %>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card shadow">
+        <div class="card-header">
+          <div class="price-text">
+            <span>予約者情報</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">ニックネーム</label>
+            <span class="align-self-center"><%= current_user.nickname %></span>
+            <span></span>
+          </div>
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">名前</label>
+            <span class="align-self-center"><%= current_user.kanji_family_name %> <%= current_user.kanji_first_name %></span>
+          </div>
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">メールアドレス</label>
+            <span class="align-self-center"><%= current_user.email %></span>
+          </div>
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">住 所</label>
+            <div>
+              <p class="align-self-center">〒<%= current_user.zip_code %></p>
+              <span class="align-self-center"><%= current_user.region.name %></span>
+              <span class="align-self-center"><%= current_user.city %></span>
+              <span class="align-self-center"><%= current_user.address1 %></span>
+              <p class="align-self-center pl-2"><%= current_user.address2 %></p>
+            </div>
+          </div>
+          <div class="form-group d-flex">
+            <label class="col-4 col-form-label">電話番号</label>
+            <span class="align-self-center"><%= current_user.phone %></span>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card shadow">
+        <div class="card-header">
+          <div class="price-text">
+            <span>お預けする猫情報</span>
+          </div>
+        </div>
+        <div class="card-body row">
+          <div class="col-lg-4">
+            <%= image_tag @cat.images.first, width: "100%", height: "250" %>
+          </div>
+          <div class="col-lg-8">
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">お名前</label>
+              <span class="align-self-center"><%= @cat.name %></span>
+              <span></span>
+            </div>
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">年 齢</label>
+              <span class="align-self-center"><%= @cat.age.name %></span>
+            </div>
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">性 別</label>
+              <span class="align-self-center">
+                <% if @cat.sex == 1 %>
+                  オス
+                <% elsif @cat.sex == 2 %>
+                  メス
+                <% end %>
+              </span>
+            </div>
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">性 格</label>
+              <div>
+                <span class="align-self-center">
+                  <% if @cat.chara_clever == 1 %>
+                    <p>お利口</p>
+                  <% end %>
+                  <% if @cat.chara_sleep == 1 %>
+                    <p>よく寝る</p>
+                  <% end %>
+                  <% if @cat.chara_active == 1 %>
+                    <p>わんぱく</p>
+                  <% end %>
+                  <% if @cat.chara_quiet == 1 %>
+                    <p>おとなしい</p>
+                  <% end %>
+                  <% if @cat.chara_greedy == 1 %>
+                    <p>食いしん坊</p>
+                  <% end %>
+                  <% if @cat.chara_lonely == 1 %>
+                    <p>甘えん坊</p>
+                  <% end %>
+                  <% if @cat.chara_own == 1 %>
+                    <p>マイペース</p>
+                  <% end %>
+                </span>
+              </div>
+            </div>
+            <div class="form-group d-flex">
+              <label class="col-4 col-form-label">詳細説明</label>
+              <span class="align-self-center"><%= @cat.explanation %></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='text-center my-5'>
+        <%= f.submit "予約する" ,class: "btn-lg btn-info" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+</main>
+
+<%= render "shared/footer" %>
+
