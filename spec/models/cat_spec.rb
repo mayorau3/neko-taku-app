@@ -51,7 +51,7 @@ RSpec.describe Cat, type: :model do
       expect(@cat.errors.full_messages).to include("Sex can't be blank")
     end
 
-    it '特徴の全ての項目が空でも登録できること' do
+    it '性格の全ての項目が空でも登録できること' do
       @cat.chara_clever = nil
       @cat.chara_sleep = nil
       @cat.chara_active = nil
