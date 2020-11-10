@@ -108,7 +108,7 @@
         <% @houses.each do |house| %>
         <div class="col-lg-4">
           <div class="card mb-4 shadow" >
-            <%= image_tag house.images.first, class:"card-img-top ", height: "225", style:"object-fit: contain;" %>
+            <%= image_tag house.images.first, class:"card-img-top p-2", height: "225", style:"object-fit: contain;" %>
             <div class="card-body">
               <p class="card-text"><%= house.pr %></p>
               <div class="price mx-auto" style="width: 260px;">
