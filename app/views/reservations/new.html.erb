@@ -17,7 +17,7 @@
       <div class="card mb-3 shadow" >
         <div class="row no-gutters">
           <div class="col-lg-4 p-2">
-            <%= image_tag @house.images.first, width: "100%" %>
+            <%= image_tag @house.images.first, width: "100%", style:"object-fit: contain;" %>
           </div>
           <div class="col-lg-8">
             <div class="card-body">
@@ -133,7 +133,7 @@
         </div>
         <div class="card-body row">
           <div class="col-lg-4">
-            <%= image_tag @cat.images.first, width: "100%" %>
+            <%= image_tag @cat.images.first, width: "100%", style:"object-fit: contain;" %>
           </div>
           <div class="col-lg-8">
             <div class="form-group d-flex">
