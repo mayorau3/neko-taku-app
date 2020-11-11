@@ -110,7 +110,7 @@
           <% @results.each do |result| %>
           <div class="col-md-4">
             <div class="card mb-4 shadow">
-              <%= image_tag result.images.first, class:"card-img-top", height: "225" %>
+              <%= image_tag result.images.first, class:"card-img-top p-2", height: "225", style:"object-fit: contain;" %>
               <div class="card-body">
                 <p class="card-text"><%= result.pr %></p>
                 <div class="price mx-auto" style="width: 260px;">
