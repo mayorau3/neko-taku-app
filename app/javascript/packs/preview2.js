@@ -1,6 +1,6 @@
 function preview(){
-  const ImageList = document.getElementById('image-list');
-  if (!ImageList) {
+  const ImageList2 = document.getElementById('image-list2');
+  if (!ImageList2) {
     return;
   }
   // 選択した画像を表示する関数
@@ -15,13 +15,13 @@ function preview(){
     blobImage.setAttribute('src', blob);
     // ファイル選択ボタンを生成
     const inputHTML = document.createElement('input');
-    inputHTML.setAttribute('id', `house_image_${imageElementNum}`);
-    inputHTML.setAttribute('name', 'house[images][]');
+    inputHTML.setAttribute('id', `cat_image_${imageElementNum}`);
+    inputHTML.setAttribute('name', 'cat[images][]');
     inputHTML.setAttribute('type', 'file');
     // 生成したHTMLの要素をブラウザに表示させる
     imageElement.appendChild(blobImage);
     imageElement.appendChild(inputHTML)
-    ImageList.appendChild(imageElement);
+    ImageList2.appendChild(imageElement);
 
     inputHTML.addEventListener('change', (e) => {
       file = e.target.files[0];
@@ -31,7 +31,7 @@ function preview(){
     })
   };
 
-  document.getElementById('house-image').addEventListener('change', function(e){
+  document.getElementById('cat-image').addEventListener('change', function(e){
     const file = e.target.files[0];
     const blob = window.URL.createObjectURL(file);
 

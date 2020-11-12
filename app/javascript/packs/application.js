@@ -10,6 +10,7 @@ require("channels")
 require("../price")
 require("../price2")
 require('./preview')
+require('./preview2')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
