@@ -15,8 +15,8 @@ function preview(){
     blobImage.setAttribute('src', blob);
     // ファイル選択ボタンを生成
     const inputHTML = document.createElement('input');
-    inputHTML.setAttribute('id', `storage_image_${imageElementNum}`);
-    inputHTML.setAttribute('name', 'storage[images][]');
+    inputHTML.setAttribute('id', `house_image_${imageElementNum}`);
+    inputHTML.setAttribute('name', 'house[images][]');
     inputHTML.setAttribute('type', 'file');
     // 生成したHTMLの要素をブラウザに表示させる
     imageElement.appendChild(blobImage);
@@ -31,7 +31,7 @@ function preview(){
     })
   };
 
-  document.getElementById('storage-image').addEventListener('change', function(e){
+  document.getElementById('house-image').addEventListener('change', function(e){
     const file = e.target.files[0];
     const blob = window.URL.createObjectURL(file);
 
