@@ -62,7 +62,7 @@ https://github.com/mayorau3/neko-taku-app
 
 ### Search / 検索機能
 <div align="center">
-<img src="https://media.giphy.com/media/u8uiD6zlHySSNqsNA7/giphy.gif">
+<img src="https://user-images.githubusercontent.com/69891481/99071098-d7574200-25f4-11eb-9675-fd1b54aae847.gif">
 </div>
 <br>
 
