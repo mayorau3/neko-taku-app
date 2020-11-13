@@ -1,6 +1,6 @@
 # :cat: App Name / アプリ名
 
-### <img src="https://user-images.githubusercontent.com/69891481/99021029-19579800-25a3-11eb-849e-b12b3d55c1c5.png" width="50px">　ねこ宅 - Neko-Taku -
+### <a href="https://neko-taku-app.herokuapp.com/"><img src="https://user-images.githubusercontent.com/69891481/99021029-19579800-25a3-11eb-849e-b12b3d55c1c5.png" width="50px"></a>　ねこ宅 - Neko-Taku -
 <br>
 <br>
 
