@@ -1,6 +1,6 @@
 # テーブル設計
 
-## users テーブル
+## users table
 
 | Column             | Type    | Options     |
 | ------------------ | ------- | ----------- |
@@ -21,7 +21,7 @@
 - has_many :cats
 - has_many :reservations
 
-## houses テーブル
+## houses table
 
 | Column         | Type       | Options                        |
 | -------------- | ---------- | ------------------------------ |
@@ -46,7 +46,7 @@
 - has_many :reservations
 
 
-## cats テーブル
+## cats table
 
 | Column       | Type       | Options                        |
 | ------------ | ---------- | ------------------------------ |
@@ -66,7 +66,7 @@
 ### Association
 - belongs_to :user
 
-## reservations テーブル
+## reservations table
 
 | Column        | Type       | Options                        |
 | ------------  | ---------- | ------------------------------ |
