@@ -84,6 +84,9 @@ https://github.com/mayorau3/neko-taku-app
 <br>
 
 ### お預け予約機能
+<div align="center">
+<img src="https://user-images.githubusercontent.com/69891481/99075599-16899100-25fd-11eb-9a21-dac0ed2170e5.gif">
+</div>
 <br>
 <br>
 
