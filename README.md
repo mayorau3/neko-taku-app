@@ -57,6 +57,7 @@ https://github.com/mayorau3/neko-taku-app
 ![Demo1](https://media.giphy.com/media/oc9tRzm3cRg4ps5BAk/giphy.gif)
 
 ### トップページ→検索機能
+![Demo2](https://media.giphy.com/media/u8uiD6zlHySSNqsNA7/giphy.gif)
 
 ### My宅登録機能
 
