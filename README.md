@@ -52,6 +52,10 @@ https://github.com/mayorau3/neko-taku-app
 <br>
 <br>
 
+## Requirement Definition / 要件定義
+以下のシートをご覧ください。実装要件と今後追加したい機能を記載しています。
+<br>
+
 ## :movie_camera: Demo / 動作確認
 
 ### Sign up / ユーザー新規登録機能
@@ -83,12 +87,19 @@ https://github.com/mayorau3/neko-taku-app
 <br>
 <br>
 
-### お預け予約機能
+### Reservation / お預け予約機能
 <div align="center">
 <img src="https://user-images.githubusercontent.com/69891481/99075599-16899100-25fd-11eb-9a21-dac0ed2170e5.gif">
 </div>
 <br>
 <br>
+
+## Development Eenvironment / 使用技術（開発環境）
+Ruby/Ruby on Rails/JavaScript/MySQL/Github/AWS-S3/Heroku/Visual Studio Code
+
+## 工夫したポイント
+
+## 今後追加したい実装
 
 
 ## :scroll: Screen Transition Diagram / 画面遷移図
