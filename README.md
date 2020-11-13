@@ -56,7 +56,7 @@ https://github.com/mayorau3/neko-taku-app
 
 ### Sign up / ユーザー新規登録機能
 <div align="center">
-<img src="https://user-images.githubusercontent.com/69891481/99070728-22248a00-25f4-11eb-9721-b5bb6c7168ee.gif">
+<img src="https://user-images.githubusercontent.com/69891481/99071535-a88d9b80-25f5-11eb-8cf3-78029f381c14.gif">
 </div>
 <br>
 <br>
