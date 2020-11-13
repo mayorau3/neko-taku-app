@@ -77,6 +77,9 @@ https://github.com/mayorau3/neko-taku-app
 
 
 ### My Cat Registration / My猫登録機能
+<div align="center">
+<img src="https://user-images.githubusercontent.com/69891481/99074333-e8a34d00-25fa-11eb-9d5b-aac509a40e93.gif">
+</div>
 <br>
 <br>
 
