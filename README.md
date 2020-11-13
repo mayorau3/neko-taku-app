@@ -67,6 +67,11 @@ https://github.com/mayorau3/neko-taku-app
 <br>
 
 ### My House Registration / 宅登録機能
+<div align="center">
+<img src="https://user-images.githubusercontent.com/69891481/99069500-cfe26980-25f1-11eb-8fb8-35a8848039aa.gif">
+</div>
+<br>
+
 
 ### My Cat Registration / My猫登録機能
 
