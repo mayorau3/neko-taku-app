@@ -1,10 +1,10 @@
-# :cat: App Name / アプリ名
+## :cat: App Name / アプリ名
 
 ### <a href="https://neko-taku-app.herokuapp.com/"><img src="https://user-images.githubusercontent.com/69891481/99021029-19579800-25a3-11eb-849e-b12b3d55c1c5.png" width="50px"></a>　ねこ宅 - Neko-Taku -
 <br>
 <br>
 
-# :book: Overview / 概要
+## :book: Overview / 概要
 
 ### Not pet hotel, the service for taking care of your cat as an individual, - Neko-taku -.
 ### ペットホテルならぬ、個人で猫を預かるサービス『ねこ宅』
@@ -26,7 +26,7 @@ You browse the details of house's information, enter the required information if
 <br>
 
 
-# :globe_with_meridians: Production Environment / 本番環境
+## :globe_with_meridians: Production Environment / 本番環境
 
 ### App URL
 https://neko-taku-app.herokuapp.com/
@@ -48,10 +48,11 @@ https://github.com/mayorau3/neko-taku-app
 <br>
 
 
-# :dart: Intention / 制作背景（意図）
+## :dart: Intention / 制作背景（意図）
+<br>
+<br>
 
-
-# :movie_camera: Demo / 動作確認
+## :movie_camera: Demo / 動作確認
 
 ### Sign up / ユーザー新規登録機能
 <div align="center">
@@ -73,19 +74,19 @@ https://github.com/mayorau3/neko-taku-app
 
 
 
-# :scroll: Screen Transition Diagram / 画面遷移図
+## :scroll: Screen Transition Diagram / 画面遷移図
 ![ねこ宅画面遷移図](https://user-images.githubusercontent.com/69891481/99019909-c977d180-25a0-11eb-85dd-e8523a5da959.png)
 
 
 
-# :scroll: ER / ER図
+## :scroll: ER / ER図
  ![ER](https://user-images.githubusercontent.com/69891481/99016184-e4931300-2599-11eb-9380-9852658e0000.png)
 
 
 
-# :scroll: Table Design / テーブル設計
+## :scroll: Table Design / テーブル設計
 
-## users table
+### users table
 
 | Column             | Type    | Options     |
 | ------------------ | ------- | ----------- |
@@ -106,7 +107,7 @@ https://github.com/mayorau3/neko-taku-app
 - has_many :cats
 - has_many :reservations
 
-## houses table
+### houses table
 
 | Column         | Type       | Options                        |
 | -------------- | ---------- | ------------------------------ |
@@ -131,7 +132,7 @@ https://github.com/mayorau3/neko-taku-app
 - has_many :reservations
 
 
-## cats table
+### cats table
 
 | Column       | Type       | Options                        |
 | ------------ | ---------- | ------------------------------ |
@@ -151,7 +152,7 @@ https://github.com/mayorau3/neko-taku-app
 ### Association
 - belongs_to :user
 
-## reservations table
+### reservations table
 
 | Column        | Type       | Options                        |
 | ------------  | ---------- | ------------------------------ |
