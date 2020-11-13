@@ -54,6 +54,7 @@ https://github.com/mayorau3/neko-taku-app
 # :movie_camera: Demo / 動作確認
 
 ### ユーザー新規登録機能
+![Demo1](https://media.giphy.com/media/oc9tRzm3cRg4ps5BAk/giphy.gif)
 
 ### トップページ→検索機能
 
