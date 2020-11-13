@@ -1,10 +1,10 @@
-# App Name / アプリ名
+# :octocat: App Name / アプリ名
 
 ### <img src="https://user-images.githubusercontent.com/69891481/99021029-19579800-25a3-11eb-849e-b12b3d55c1c5.png" width="50px">　ねこ宅 - Neko-Taku -
 <br>
 <br>
 
-# Overview / 概要
+# :book: Overview / 概要
 
 ### Not pet hotel, the service for taking care of your cat as an individual, - Neko-taku -.
 ### ペットホテルならぬ、個人で猫を預かるサービス『ねこ宅』
@@ -26,7 +26,7 @@ You browse the details of house's information, enter the required information if
 <br>
 <br>
 
-# Production Environment / 本番環境
+# :globe_with_meridians: Production Environment / 本番環境
 
 ### App URL
 https://neko-taku-app.herokuapp.com/
