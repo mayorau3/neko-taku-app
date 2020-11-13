@@ -53,15 +53,15 @@ https://github.com/mayorau3/neko-taku-app
 
 # :movie_camera: Demo / 動作確認
 
-### ユーザー新規登録機能
+### Sign up / ユーザー新規登録機能
 ![Demo1](https://media.giphy.com/media/oc9tRzm3cRg4ps5BAk/giphy.gif)
 
-### トップページ→検索機能
+### Search / 検索機能
 ![Demo2](https://media.giphy.com/media/u8uiD6zlHySSNqsNA7/giphy.gif)
 
-### My宅登録機能
+### My House Registration / 宅登録機能
 
-### My猫登録機能
+### My Cat Registration / My猫登録機能
 
 ### お預け予約機能
 
