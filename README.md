@@ -59,7 +59,9 @@ https://github.com/mayorau3/neko-taku-app
 </div>
 
 ### Search / 検索機能
-![Demo2](https://media.giphy.com/media/u8uiD6zlHySSNqsNA7/giphy.gif)
+<div align="center">
+<img src="https://media.giphy.com/media/u8uiD6zlHySSNqsNA7/giphy.gif">
+</div>
 
 ### My House Registration / 宅登録機能
 
