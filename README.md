@@ -59,11 +59,13 @@ https://github.com/mayorau3/neko-taku-app
 <img src="https://user-images.githubusercontent.com/69891481/99070728-22248a00-25f4-11eb-9721-b5bb6c7168ee.gif">
 </div>
 <br>
+<br>
 
 ### Search / 検索機能
 <div align="center">
-<img src="https://user-images.githubusercontent.com/69891481/99071098-d7574200-25f4-11eb-9675-fd1b54aae847.gif">
+<img src="https://user-images.githubusercontent.com/69891481/99071395-649a9680-25f5-11eb-84c6-0d5cbe9fa119.gif">
 </div>
+<br>
 <br>
 
 ### My House Registration / 宅登録機能
@@ -71,12 +73,16 @@ https://github.com/mayorau3/neko-taku-app
 <img src="https://user-images.githubusercontent.com/69891481/99069912-9a8a4b80-25f2-11eb-9de5-974dc103b539.gif">
 </div>
 <br>
+<br>
 
 
 ### My Cat Registration / My猫登録機能
+<br>
+<br>
 
 ### お預け予約機能
-
+<br>
+<br>
 
 
 ## :scroll: Screen Transition Diagram / 画面遷移図
