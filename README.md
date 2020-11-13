@@ -8,6 +8,7 @@
 
 ### Not pet hotel, the service for taking care of your cat as an individual, - Neko-taku -.
 ### ペットホテルならぬ、個人で猫を預かるサービス『ねこ宅』
+<br>
 
 I can't have a cat becouse I live alone. I can't go out because I have a cat. If someone takes care of my cat. If someone leaves a cat to me temporarily. This App helps us grant wishes each other. The connection between people will also spread through cats.<br>
 
@@ -25,16 +26,31 @@ You browse the details of house's information, enter the required information if
 <br>
 <br>
 
-# Intention / 制作背景（意図）
-
-
 # Production Environment / 本番環境
 
 ### App URL
 https://neko-taku-app.herokuapp.com/
 
-### ログインデータ
+### Basic Authentication / Basic認証
+- ID : neko-taku
+- Pass : 2020
 
+### Account for Test / テスト用アカウント
+- House's owner<br>
+  ・Email : ko@ko<br>
+  ・Pass : ko1010
+- Cat's owner<br>
+  ・Email：neko@neko<br>
+  ・Pass：neko11<br>
+  
+### Github Repository / Githubリポジトリ
+https://github.com/mayorau3/neko-taku-app
+
+
+
+
+
+# Intention / 制作背景（意図）
 
 
 
