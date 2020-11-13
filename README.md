@@ -6,13 +6,25 @@
 
 # Overview / 概要
 
+### Not pet hotel, the service for taking care of your cat as an individual, - Neko-taku -.
 ### ペットホテルならぬ、個人で猫を預かるサービス『ねこ宅』
-猫を預けたい人、猫を預かりたい人、双方の希望をマッチさせるアプリケーション。<br>
-猫を預けたい人は飼っている猫情報を登録する。猫を預かりたい人は家（お宅）の情報を登録する。<br>
-お宅登録情報がトップページに一覧で表示され、猫の飼い主は自分の家の近くや希望する条件にあったお宅情報を検索することができる。
-お宅情報の詳細を閲覧し、希望にあえば、必要情報を入力し、お預けの予約をすることができる。
 
+I can't have a cat becouse I live alone. I can't go out because I have a cat. If someone takes care of my cat. If someone leaves cats to me temporarily.<br>
 
+A person who wants to leave their cat, a person who wants to take care of cats, the App for matching their wish.<br>
+A person who wants to leave their cat registers the cat's information for this App. A person who wants to take care of cats registers their house's information for this App.<br>
+The lists of house are displayed in the top page and cat's owner can search 
+
+ひとり暮らしだから猫を飼えない。猫がいるから出かけられない。誰か預かってくれたら…。一時的に預かれたら…。預ける人も預かる人も、お互いの願いを叶えられる場。猫を通して、人との繋がりも広がる。
+
+猫を預けたい人、猫を預かりたい人、双方の希望をマッチさせるアプリケーションです。。<br>
+猫を預けたい人は飼っている猫情報を登録します。猫を預かりたい人は家（お宅）の情報を登録します。<br>
+お宅登録情報がトップページに一覧で表示され、猫の飼い主は自分の家の近くや希望する条件にあったお宅情報を検索することができます。
+お宅情報の詳細を閲覧し、希望にあえば、必要情報を入力し、お預けの予約をすることができます。
+<br>
+<br>
+
+# Intention / 制作背景（意図）
 
 
 # Production Environment / 本番環境
