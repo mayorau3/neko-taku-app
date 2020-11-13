@@ -81,5 +81,9 @@
 - belongs_to :user
 - belongs_to :house
 
+
 # ER / ER図
  ![ER](https://user-images.githubusercontent.com/69891481/99016184-e4931300-2599-11eb-9380-9852658e0000.png)
+ 
+# Screen Transition Diagram/ 画面遷移図
+![ねこ宅画面遷移図](https://user-images.githubusercontent.com/69891481/99019909-c977d180-25a0-11eb-85dd-e8523a5da959.png)
