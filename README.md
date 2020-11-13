@@ -1,4 +1,4 @@
-# テーブル設計
+# Table Design / テーブル設計
 
 ## users table
 
