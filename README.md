@@ -1,4 +1,4 @@
-# :octocat: App Name / アプリ名
+# :cat: App Name / アプリ名
 
 ### <img src="https://user-images.githubusercontent.com/69891481/99021029-19579800-25a3-11eb-849e-b12b3d55c1c5.png" width="50px">　ねこ宅 - Neko-Taku -
 <br>
@@ -24,7 +24,7 @@ You browse the details of house's information, enter the required information if
 お宅登録情報がトップページに一覧で表示され、猫の飼い主は自分の家の近くや希望する条件にあったお宅情報を検索することができます。
 お宅情報の詳細を閲覧し、希望にあえば、必要情報を入力し、お預けの予約をすることができます。
 <br>
-<br>
+
 
 # :globe_with_meridians: Production Environment / 本番環境
 
@@ -45,27 +45,37 @@ https://neko-taku-app.herokuapp.com/
   
 ### Github Repository / Githubリポジトリ
 https://github.com/mayorau3/neko-taku-app
+<br>
+
+
+# :dart: Intention / 制作背景（意図）
+
+
+# :movie_camera: Demo / 動作確認
+
+### ユーザー新規登録機能
+
+### トップページ→検索機能
+
+### My宅登録機能
+
+### My猫登録機能
+
+### お預け予約機能
 
 
 
-
-
-# Intention / 制作背景（意図）
-
-
-
-
-# Screen Transition Diagram / 画面遷移図
+# :scroll: Screen Transition Diagram / 画面遷移図
 ![ねこ宅画面遷移図](https://user-images.githubusercontent.com/69891481/99019909-c977d180-25a0-11eb-85dd-e8523a5da959.png)
 
 
 
-# ER / ER図
+# :scroll: ER / ER図
  ![ER](https://user-images.githubusercontent.com/69891481/99016184-e4931300-2599-11eb-9380-9852658e0000.png)
 
 
 
-# Table Design / テーブル設計
+# :scroll: Table Design / テーブル設計
 
 ## users table
 
