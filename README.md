@@ -80,3 +80,6 @@
 ### Association
 - belongs_to :user
 - belongs_to :house
+
+# ER / ER図
+ ![ER](https://user-images.githubusercontent.com/69891481/99016184-e4931300-2599-11eb-9380-9852658e0000.png)
