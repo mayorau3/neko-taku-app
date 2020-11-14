@@ -52,19 +52,19 @@ https://github.com/mayorau3/neko-taku-app
 Aging of the population,the trend toward nuclear families and late marriage and decreasing birthrate, These trends are expected to accelerate further in the future.The problem that relationships in a region have become weak for a long time before.　Various things in the world are systematized and we can live without relationships with another person. due to the influence of COVID-19, I feel the situation people feel lonely more and more will increase.<br>
 
 In this situation, There is pet therapy, A Pet heals us greatly. He(or she) is family and important for the owner. The value will increase more and more.<br>
-The generation who was born around 1950 became in the seventies, Many elderly people hesitate have a pet because they think about the left of their life.
-In stead of getting married, They want to have a pet. But, they can't decide to have a pet because they think about when they go out all day long or for a few days. Are there many such people? <br>
+The generation who was born around 1950 became in the seventies, Many elderly people hesitate have a cat because they think about the left of their life.
+In stead of getting married, They want to have a cat. But, they can't decide to have a cat because they think about when they go out all day long or for a few days. Are there many such people? <br>
 
-Actually there are pet hotels, but I guess they worry their pet may wait for them in a gage all day long or they want their pet to be loved.<br>
-If they can select "keep" not "have", they can touch pets.<br>
+Actually there are pet hotels, but I guess they worry their cat may wait for them in a gage all day long or they want their cat to be loved.<br>
+If they can select not "have" but "keep", they can touch cats.<br>
 As a result, I think this app helps them grant wishes each other and I created this app.<br>
 
-Furthermore,
+Then if users of this app increase, they can leave their cat to a person who lives near them. Furthermore, The community will be born in the reagion through cats and The connection between people will also spread. Keeping a cat or leaving a cat make them avoid teir lonelines. I think the life will become more full of happif the connection each other is build and the opportunity of their relationship increase.
 
 高齢化、核家族化、晩婚化、少子化、これらの流れは今後一層加速していくことが予想されます。また地域の関係性の希薄さも今に始まった問題ではありません。世の中のあらゆる仕組みがシステム化され、人と繋がらなくても生活していくことのできる環境の中、昨今のコロナ禍の影響もあり、ますます個々が孤独を感じる状況は増えているように感じられます。<br>
 
 そんな中、ペットセラピーという分野もあるように、ペットの癒し効果は絶大です。一家族であり、心を潤わせてくれる大切な存在。その存在価値はますます高まっていくことでしょう。<br>
-団塊の世代が70代となった今、多くの高齢者が、今後ペットを飼いたいと思っても、ご自身の残りの人生を考えると、ペットを残してしまう可能性からペットを飼うことを躊躇してしまう。結婚しない分家族としてペットを迎え入れたいが、一人暮らしで昼間不在、外泊のことも考えると中々飼えない。<br>
+団塊の世代が70代となった今、多くの高齢者が、今後猫を飼いたいと思っても、ご自身の残りの人生を考えると、猫を残してしまう可能性から猫を飼うことを躊躇してしまう。結婚しない分家族として猫を迎え入れたいが、一人暮らしで昼間不在、外泊のことも考えると中々飼えない。<br>
 そのような人がたくさんいるのではないでしょうか。<br>
 
 現状ペットホテルという選択肢もありますが、狭いゲージの中で待っているだけなのではないか、どうせなら可愛がってくれる人に預けられたら・・・。<br>
@@ -74,7 +74,7 @@ Furthermore,
 また、登録者が増えれば、自分の近所の人に預けることができます。さらには猫を通してその地域内でのコミュニティーができ、人と人との繋がりが広がっていく。<br>
 猫を飼う、預かることでの孤独回避に加え、実際に人同士の繋がりができ、触れ合う機会が増えたらさらにより良い暮らしを実現できると考えています。<br>
 
-さらに猫
+
 <br>
 <br>
 
