@@ -135,14 +135,12 @@ I thought the community through only cats will spread more easily.<br>
 Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Bootstrap
 <br>
 <br>
+
 ## 工夫したポイント
 - お預け予約をするにあたり、猫情報テーブルを用意して、そこからデータを取得しています。今後、猫登録情報の一覧、検索ができ、双方マッチングができるアプリにできるよう、想定してあります。
 <br>
 <br>
 
-## 今後追加したい実装
-<br>
-<br>
 
 ## :scroll: Screen Transition Diagram / 画面遷移図
 ![ねこ宅画面遷移図](https://user-images.githubusercontent.com/69891481/99019909-c977d180-25a0-11eb-85dd-e8523a5da959.png)
