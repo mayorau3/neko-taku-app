@@ -49,7 +49,11 @@ https://github.com/mayorau3/neko-taku-app
 
 
 ## :dart: Intention / 制作背景（意図）
-Aging of the population,the trend toward nuclear families　and late marriage and decreasing birthrate, These trends are expected to accelerate further in the future.The problem that relationships in a region have become weak for a long time before.　Various things in the world are systematized and we can live without relationships with another person.
+Aging of the population,the trend toward nuclear families and late marriage and decreasing birthrate, These trends are expected to accelerate further in the future.The problem that relationships in a region have become weak for a long time before.　Various things in the world are systematized and we can live without relationships with another person. due to the influence of COVID-19, I feel the situation people feel lonely more and more will increase.<br>
+
+In this situation, There is pet therapy, A Pet heals us greatly. He(or she) is family and important for the owner. The value will increase more and more.<br>
+The generation who was born around 1950 became in the seventies, Many elderly people hesitate take care of a pet because they think about the left of their life.
+In stead of
 
 高齢化、核家族化、晩婚化、少子化、これらの流れは今後一層加速していくことが予想されます。また地域の関係性の希薄さも今に始まった問題ではありません。世の中のあらゆる仕組みがシステム化され、人と繋がらなくても生活していくことのできる環境の中、昨今のコロナ禍の影響もあり、ますます個々が孤独を感じる状況は増えているように感じられます。<br>
 
