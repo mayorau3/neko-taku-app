@@ -24,7 +24,7 @@ You browse the details of house's information, enter the required information if
 お宅登録情報がトップページに一覧で表示され、猫の飼い主は自分の家の近くや希望する条件にあったお宅情報を検索することができます。
 お宅情報の詳細を閲覧し、希望にあえば、必要情報を入力し、お預けの予約をすることができます。
 <br>
-
+<br>
 
 ## :globe_with_meridians: Production Environment / 本番環境
 
@@ -46,7 +46,7 @@ https://neko-taku-app.herokuapp.com/
 ### GitHub Repository / GitHubリポジトリ
 https://github.com/mayorau3/neko-taku-app
 <br>
-
+<br>
 
 ## :dart: Intention / 制作背景（意図）
 Aging of the population,the trend toward nuclear families and late marriage and decreasing birthrate, These trends are expected to accelerate further in the future.The problem that relationships in a region have become weak for a long time before.　Various things in the world are systematized and we can live without relationships with another person. due to the influence of COVID-19, I feel the situation people feel lonely more and more will increase.<br>
@@ -63,7 +63,7 @@ Then if users of this app increase, they can leave their cat to a person who liv
 
 * Why is this app only for cat?<br>
 I thought this app should not be only for a cat but also for a dog. but it's easy to know who is this app for and the app becomes more simple and easy to use.<br>
-I thought the community through only cats will spread more easily.
+I thought the community through only cats will spread more easily.<br>
 
 
 高齢化、核家族化、晩婚化、少子化、これらの流れは今後一層加速していくことが予想されます。また地域の関係性の希薄さも今に始まった問題ではありません。世の中のあらゆる仕組みがシステム化され、人と繋がらなくても生活していくことのできる環境の中、昨今のコロナ禍の影響もあり、ますます個々が孤独を感じる状況は増えているように感じられます。<br>
@@ -79,8 +79,8 @@ I thought the community through only cats will spread more easily.
 また、登録者が増えれば、自分の近所の人に預けることができます。さらには猫を通してその地域内でのコミュニティーができ、人と人との繋がりが広がっていく。<br>
 猫を飼う、預かることでの孤独回避に加え、実際に人同士の繋がりができ、触れ合う機会が増えたらさらにより良い暮らしを実現できると考えています。<br>
 
-＊　猫に特化した理由<br>
-犬と猫用とする考えもありましたが、猫に特化することでターゲットを絞りやすく、アプリの使用もシンプルにわかりやすく構成できるため
+* 猫に特化した理由<br>
+犬と猫用とする考えもありましたが、猫に特化することでターゲットを絞りやすく、アプリの使用もシンプルにわかりやすく構成できるため<br>
 一定のユーザーに限定することで、「猫」という共通のコミュニティ波及に繋がりやすくなると考えたため
 
 
@@ -90,8 +90,10 @@ I thought the community through only cats will spread more easily.
 ## Requirement Definition / 要件定義
 以下のシートをご覧ください。実装要件と今後追加したい機能を記載しています。
 <br>
+<br>
 
 ## :movie_camera: Demo / 動作確認
+<br>
 
 ### Sign up / ユーザー新規登録機能
 <div align="center">
@@ -131,12 +133,15 @@ I thought the community through only cats will spread more easily.
 
 ## Development Eenvironment / 使用技術（開発環境）
 Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Bootstrap
-
+<br>
+<br>
 ## 工夫したポイント
 - お預け予約をするにあたり、猫情報テーブルを用意して、そこからデータを取得しています。今後、猫登録情報の一覧、検索ができ、双方マッチングができるアプリにできるよう、想定してあります。
-
+<br>
+<br>
 ## 今後追加したい実装
-
+<br>
+<br>
 
 ## :scroll: Screen Transition Diagram / 画面遷移図
 ![ねこ宅画面遷移図](https://user-images.githubusercontent.com/69891481/99019909-c977d180-25a0-11eb-85dd-e8523a5da959.png)
