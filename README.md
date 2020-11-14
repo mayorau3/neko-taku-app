@@ -61,7 +61,7 @@ As a result, I think this app helps them grant wishes each other and I created t
 
 Then if users of this app increase, they can leave their cat to a person who lives near them. Furthermore, The community will be born in the reagion through cats and The connection between people will also spread. Keeping a cat or leaving a cat make them avoid teir lonelines. I think the life will become more full of happiness if the connection each other is build and the opportunity of their relationship increases.<br>
 
-* Why is this app only for cat?
+* Why is this app only for cat?<br>
 I thought this app should not be only for a cat but also for a dog. but it's easy to know who is this app for and the app becomes more simple and easy to use.<br>
 I thought the community through only cats will spread more easily.
 
