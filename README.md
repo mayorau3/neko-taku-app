@@ -142,6 +142,8 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 <br>
 <br>
 
+## :exclamation: 今後の課題
+
 
 ## :scroll: Screen Transition Diagram / 画面遷移図
 ![ねこ宅画面遷移図](https://user-images.githubusercontent.com/69891481/99019909-c977d180-25a0-11eb-85dd-e8523a5da959.png)
