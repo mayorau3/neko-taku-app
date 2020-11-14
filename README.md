@@ -55,7 +55,8 @@ In this situation, There is pet therapy, A Pet heals us greatly. He(or she) is f
 The generation who was born around 1950 became in the seventies, Many elderly people hesitate have a pet because they think about the left of their life.
 In stead of getting married, They want to have a pet. But, they can't decide to have a pet because they think about when they go out all day long or for a few days. Are there many such people? <br>
 
-Actually there are pet hotels, but I guess they worry about 
+Actually there are pet hotels, but I guess they worry their pet may wait for them in a gage all day long or they want their pet to be loved.<br>
+If they can select "keep" not "have", they can touch pets.
 
 
 高齢化、核家族化、晩婚化、少子化、これらの流れは今後一層加速していくことが予想されます。また地域の関係性の希薄さも今に始まった問題ではありません。世の中のあらゆる仕組みがシステム化され、人と繋がらなくても生活していくことのできる環境の中、昨今のコロナ禍の影響もあり、ますます個々が孤独を感じる状況は増えているように感じられます。<br>
@@ -69,6 +70,8 @@ Actually there are pet hotels, but I guess they worry about
 このように預ける側、預かる側双方が希望を叶えられる仕組みになるのではないかと考え、このアプリを作成しました。<br>
 また、登録者が増えれば、自分の近所の人に預けることができます。さらには猫を通してその地域内でのコミュニティーができ、人と人との繋がりが広がっていく。<br>
 猫を飼う、預かることでの孤独回避に加え、実際に人同士の繋がりができ、触れ合う機会が増えたらさらにより良い暮らしを実現できると考えています。<br>
+
+さらに猫
 <br>
 <br>
 
