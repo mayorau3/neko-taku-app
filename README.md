@@ -53,7 +53,9 @@ Aging of the population,the trend toward nuclear families and late marriage and 
 
 In this situation, There is pet therapy, A Pet heals us greatly. He(or she) is family and important for the owner. The value will increase more and more.<br>
 The generation who was born around 1950 became in the seventies, Many elderly people hesitate have a pet because they think about the left of their life.
-In stead of getting married, They want to have a pet. But, they can't decide to have a pet because they think about when they go out all day long or for a few days. Are there many such people? 
+In stead of getting married, They want to have a pet. But, they can't decide to have a pet because they think about when they go out all day long or for a few days. Are there many such people? <br>
+
+Actually there are pet hotels, but I guess they worry about 
 
 
 高齢化、核家族化、晩婚化、少子化、これらの流れは今後一層加速していくことが予想されます。また地域の関係性の希薄さも今に始まった問題ではありません。世の中のあらゆる仕組みがシステム化され、人と繋がらなくても生活していくことのできる環境の中、昨今のコロナ禍の影響もあり、ますます個々が孤独を感じる状況は増えているように感じられます。<br>
