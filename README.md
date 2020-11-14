@@ -118,10 +118,10 @@ If they can select "keep" not "have", they can touch pets.
 <br>
 
 ## Development Eenvironment / 使用技術（開発環境）
-Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code
+Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Bootstrap
 
 ## 工夫したポイント
-- お預け予約をするにあたり、猫情報を都度入力する形式でも良かったのですが、今後、猫登録情報の一覧、検索ができ、双方マッチングができるアプリになるよう、猫情報テーブルを用意して、そこからデータを取得しています。
+- お預け予約をするにあたり、猫情報テーブルを用意して、そこからデータを取得しています。今後、猫登録情報の一覧、検索ができ、双方マッチングができるアプリにできるよう、想定してあります。
 
 ## 今後追加したい実装
 
