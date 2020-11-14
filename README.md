@@ -10,10 +10,10 @@
 ### ペットホテルならぬ、個人で猫を預かるサービス『ねこ宅』
 <br>
 
-I can't have a cat becouse I live alone. I can't go out because I have a cat. If someone takes care of my cat. If someone leaves a cat to me temporarily. This App helps us grant wishes each other. The connection between people will also spread through cats.<br>
+I can't have a cat becouse I live alone. I can't go out because I have a cat. If someone takes care of my cat. If someone leaves a cat to me temporarily. This app helps us grant wishes each other. The connection between people will also spread through cats.<br>
 
-A person who wants to leave their cat, a person who wants to take care of cats, this is the App for matching their wishes.<br>
-Cat's owner registers the cat's information for this App. House's owner registers their house's information for this App.<br>
+A person who wants to leave their cat, a person who wants to take care of cats, this is the app for matching their wishes.<br>
+Cat's owner registers the cat's information for this app. House's owner registers their house's information for this app.<br>
 The lists of house are displayed in the top page and cat's owner can search house's information near their home or according to their desired conditions.
 You browse the details of house's information, enter the required information if you wish, and make a reservation for leaving.
 
@@ -56,8 +56,10 @@ The generation who was born around 1950 became in the seventies, Many elderly pe
 In stead of getting married, They want to have a pet. But, they can't decide to have a pet because they think about when they go out all day long or for a few days. Are there many such people? <br>
 
 Actually there are pet hotels, but I guess they worry their pet may wait for them in a gage all day long or they want their pet to be loved.<br>
-If they can select "keep" not "have", they can touch pets.
+If they can select "keep" not "have", they can touch pets.<br>
+As a result, I think this app helps them grant wishes each other and I created this app.<br>
 
+Furthermore,
 
 高齢化、核家族化、晩婚化、少子化、これらの流れは今後一層加速していくことが予想されます。また地域の関係性の希薄さも今に始まった問題ではありません。世の中のあらゆる仕組みがシステム化され、人と繋がらなくても生活していくことのできる環境の中、昨今のコロナ禍の影響もあり、ますます個々が孤独を感じる状況は増えているように感じられます。<br>
 
@@ -68,6 +70,7 @@ If they can select "keep" not "have", they can touch pets.
 現状ペットホテルという選択肢もありますが、狭いゲージの中で待っているだけなのではないか、どうせなら可愛がってくれる人に預けられたら・・・。<br>
 飼う、という選択肢ではなく、預かる、という選択肢だったら気負いなく猫と触れ合える・・・。<br>
 このように預ける側、預かる側双方が希望を叶えられる仕組みになるのではないかと考え、このアプリを作成しました。<br>
+
 また、登録者が増えれば、自分の近所の人に預けることができます。さらには猫を通してその地域内でのコミュニティーができ、人と人との繋がりが広がっていく。<br>
 猫を飼う、預かることでの孤独回避に加え、実際に人同士の繋がりができ、触れ合う機会が増えたらさらにより良い暮らしを実現できると考えています。<br>
 
