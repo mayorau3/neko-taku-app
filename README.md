@@ -15,7 +15,8 @@ I can't have a cat becouse I live alone. I can't go out because I have a cat. If
 A person who wants to leave their cat, a person who wants to take care of cats, this is the app for matching their wishes.<br>
 Cat's owner registers the cat's information for this app. House's owner registers their house's information for this app.<br>
 The lists of house are displayed in the top page and cat's owner can search house's information near their home or according to their desired conditions.
-You browse the details of house's information, enter the required information if you wish, and make a reservation for leaving.
+You browse the details of house's information, enter the required information if you wish, and make a reservation for leaving.<br>
+
 
 ひとり暮らしだから猫を飼えない。猫がいるから出かけられない。誰か預かってくれたら…。一時的に預かれたら…。預ける人も預かる人も、お互いの願いを叶えられる場。猫を通して、人との繋がりも広がる。
 
@@ -64,7 +65,7 @@ Then if users of this app increase, they can leave their cat to a person who liv
 * Why is this app only for cat?<br>
 I thought this app should not be only for a cat but also for a dog. but it's easy to know who is this app for and the app becomes more simple and easy to use if only for a cat.<br>
 I thought the community through only cats will spread more easily.<br>
-
+<br>
 
 高齢化、核家族化、晩婚化、少子化、これらの流れは今後一層加速していくことが予想されます。また地域の関係性の希薄さも今に始まった問題ではありません。世の中のあらゆる仕組みがシステム化され、人と繋がらなくても生活していくことのできる環境の中、昨今のコロナ禍の影響もあり、ますます個々が孤独を感じる状況は増えているように感じられます。<br>
 
