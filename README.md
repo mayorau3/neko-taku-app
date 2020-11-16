@@ -156,7 +156,7 @@ Then, Considering this app become widespread to elderly people, I have to be con
 <br>
 
 ## :thought_balloon: Consideration / 考察
-Based on "I want the app I can do like this", I tried to create this app while I used what I've learned. It's frustrating for me that my skill is lack to edit this app　not only from a stage of early design but also during editing.<br>
+Based on "I want the app I can do like this", I tried to create this app while I used what I've learned. It's frustrating for me that my skill is lack to edit this app not only from a stage of early design but also during editing.<br>
 And, I also got the support of the people around me. My friend who works as an engineer for system gave me some good advice. My friend who works as an illustrator makes me the logo. some friends who love a cat gave me their opinions about this service, so It helped me come up with the idea and what functions this app has to have. Through the meeting with the members who have learned together at TECH CAMP everyday, my thought was organized, I came up with the idea and I got some hints from them. <br>
 There is a limit in what just I can do by myself, but the connection between people leads to results. I felt that the possibilities are expanding steadily. The connection between people supports people. I created this app to wish for the service to take on the responsibility for that.
 <br>
