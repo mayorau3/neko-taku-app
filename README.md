@@ -143,8 +143,8 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 - You can register images with the previews at cat registration and house registration.
 - You can register and search cat character and house character by checkboxes.
 - cat owner's information from users talbe and cats table is displayed when you open a reservation page.
-- Depending on whether you log in or not, registered your cat or not, registered your house or not, the page you can connect to changes.
-
+- Depending on whether you logged in or not, registered your cat or not, registered your house or not, the page you can connect to changes.
+- I created cats table because I supporsed to create the list page of cats and search fanction and matching fanction.
 
 - 猫とお宅情報共に、プレビュー機能付きで複数画像登録できるようにしました。
 - 猫の性格、お宅の特徴はチェックボックスで登録、検索できるようにしました。
