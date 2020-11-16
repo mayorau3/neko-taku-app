@@ -138,6 +138,7 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 <br>
 
 ## :bulb: The point I thought out / 工夫したポイント
+- 
 - お預け予約をするにあたり、猫情報テーブルを用意して、そこからデータを取得しています。今後、猫登録情報の一覧、検索ができ、双方マッチングができるアプリにできるよう、想定してあります。
 <br>
 <br>
