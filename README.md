@@ -143,7 +143,7 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 <br>
 
 ## :eyes: Future Task / 今後の課題
-I created this app, that cat's owner can make a house reservation now. Ultimately, I suppose that house's owner can access to cat's owner too, in other words this app has a function for matching each other.<br>
+I created this app, that cat's owner can make a house reservation now. Ultimately, I suppose that house's owner can access to cat's owner too, in other words this app has a function of matching each other.<br>
 
 This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area imformations, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must cnotinue to learn programming more.<br>
 Then, Considering this app become widespread to elderly people, I have to bo conscious about how this app is simple and easy to use them.
@@ -156,8 +156,11 @@ Then, Considering this app become widespread to elderly people, I have to bo con
 <br>
 
 ## :thought_balloon: Consideration / 考察
+Based on "I want the app I can do like this", I tried to create this app while I used what I've learned. It's frustrating for me that my skill is lack to edit this app　not only from a stage of early design but also during editting.<br>
+And, I also got the support of the people around me. 
+<br>
 このようなアプリがあったらいい、を基に、これまで学習してきた内容を活用してアプリ作成に臨みました。設計段階から感じてはいましたが、作成していくにあたり、さらにもっとたくさんのスキルや引き出しが自分にあったら、というもどかしさも感じました。<br>
-また、周りの人の支えもありました。現役エンジニアの知人よりアドバイスをもらったり、イラストレーターの友人にロゴを作ってもらいました。複数の猫好きの友人にはこのサービスについてヒアリングし、あったらいい機能を洗い出しました。テックキャンプ学習仲間と毎日複数回アウトプットの場を設け話していく中で、思考が整理され、新しいアイデアが浮かんだり、ヒントをもらいました。<br>
+また、周りの人の支えもありました。現役エンジニアの友人よりアドバイスをもらったり、イラストレーターの友人にロゴを作ってもらいました。複数の猫好きの友人にはこのサービスについてヒアリングし、あったらいい機能を洗い出しました。テックキャンプ学習仲間と毎日複数回アウトプットの場を設け話していく中で、思考が整理され、新しいアイデアが浮かんだり、ヒントをもらいました。<br>
 一人では限界があるものも、人との関係性の構築がより良い成果に繋がり、可能性がどんどん広がっていくことを実感しました。やはり、人との繋がりが人を支えます。このアプリも、その一役を担えるサービスとなったら、という願いを込めて作成しました。
 <br>
 <br>
