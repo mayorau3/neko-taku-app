@@ -89,7 +89,9 @@ I thought the community through only cats will spread more easily.<br>
 <br>
 
 ## :memo: Requirement Definition / 要件定義
-以下のシートをご覧ください。実装要件と今後追加したい機能を記載しています。
+以下のシートをご覧ください。実装要件と今後追加したい機能を記載しています。<br>
+
+https://docs.google.com/spreadsheets/d/1gAUSL7_upxpek50PgD-6VJTuvIhE-7HnofDBlIlUmNI/edit?usp=sharing
 <br>
 <br>
 
