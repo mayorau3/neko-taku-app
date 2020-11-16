@@ -145,8 +145,8 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 ## :eyes: Future Task / 今後の課題
 I created this app, that cat's owner can make a house reservation now. Ultimately, I suppose that house's owner can access to cat's owner too, in other words this app has a function of matching each other.<br>
 
-This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area imformations, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must cnotinue to learn programming more.<br>
-Then, Considering this app become widespread to elderly people, I have to bo conscious about how this app is simple and easy to use them.
+This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area information, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must continue to learn programming more.<br>
+Then, Considering this app become widespread to elderly people, I have to be conscious about how this app is simple and easy to use them.
 
 現状、お宅登録者に対して猫登録者が予約をする、という流れになっていますが、最終的には猫登録者に対してもお宅登録者からもアクセスができるよう、双方マッチングのスタイルにすることを想定しています。<br>
 
@@ -156,7 +156,7 @@ Then, Considering this app become widespread to elderly people, I have to bo con
 <br>
 
 ## :thought_balloon: Consideration / 考察
-Based on "I want the app I can do like this", I tried to create this app while I used what I've learned. It's frustrating for me that my skill is lack to edit this app　not only from a stage of early design but also during editting.<br>
+Based on "I want the app I can do like this", I tried to create this app while I used what I've learned. It's frustrating for me that my skill is lack to edit this app　not only from a stage of early design but also during editing.<br>
 And, I also got the support of the people around me. My friend who works as an engineer for system gave me some good advice. My friend who works as an illustrator makes me the logo. some friends who love a cat gave me their opinions about this service, so It helped me come up with the idea and what functions this app has to have. Through the meeting with the members who have learned together at TECH CAMP everyday, my thought was organized, I came up with the idea and I got some hints from them. <br>
 There is a limit in what just I can do by myself, but the connection between people leads to results. I felt that the possibilities are expanding steadily. The connection between people supports people. I created this app to wish for the service to take on the responsibility for that.
 <br>
