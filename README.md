@@ -157,7 +157,7 @@ Then, Considering this app become widespread to elderly people, I have to bo con
 
 ## :thought_balloon: Consideration / 考察
 Based on "I want the app I can do like this", I tried to create this app while I used what I've learned. It's frustrating for me that my skill is lack to edit this app　not only from a stage of early design but also during editting.<br>
-And, I also got the support of the people around me. 
+And, I also got the support of the people around me. My friend who works as an engineer for systems gave me some good advice. My friend who works as an illustrator makes me the logo. some friends who love a cat gave me their opinions about this service, so It helped me come up with the idea and what functions this app has to have.
 <br>
 このようなアプリがあったらいい、を基に、これまで学習してきた内容を活用してアプリ作成に臨みました。設計段階から感じてはいましたが、作成していくにあたり、さらにもっとたくさんのスキルや引き出しが自分にあったら、というもどかしさも感じました。<br>
 また、周りの人の支えもありました。現役エンジニアの友人よりアドバイスをもらったり、イラストレーターの友人にロゴを作ってもらいました。複数の猫好きの友人にはこのサービスについてヒアリングし、あったらいい機能を洗い出しました。テックキャンプ学習仲間と毎日複数回アウトプットの場を設け話していく中で、思考が整理され、新しいアイデアが浮かんだり、ヒントをもらいました。<br>
