@@ -10,7 +10,7 @@
 ### ペットホテルならぬ、個人で猫を預かるサービス『ねこ宅』
 <br>
 
-I can't have a cat becouse I live alone. I can't go out because I have a cat. If someone takes care of my cat. If someone leaves a cat to me temporarily. This app helps us grant wishes each other. The connection between people will also spread through cats.<br>
+I can't have a cat because I live alone. I can't go out because I have a cat. If someone takes care of my cat. If someone leaves a cat to me temporarily. This app helps us grant wishes each other. The connection between people will also spread through cats.<br>
 
 A person who wants to leave their cat, a person who wants to take care of cats, this is the app for matching their wishes.<br>
 Cat's owner registers the cat's information for this app. House's owner registers their house's information for this app.<br>
@@ -145,7 +145,7 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 ## :eyes: Future Task / 今後の課題
 I created this app, that cat's owner can make a house reservation now. Ultimately, I suppose that house's owner can access to cat's owner too, in other words this app has a feature for matching each other.<br>
 
-This app has to have more features because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the feature that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making communities of reagions, 
+This app has to have more features because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the feature that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next features as priority.　: 
 
 現状、お宅登録者に対して猫登録者が予約をする、という流れになっていますが、最終的には猫登録者に対してもお宅登録者からもアクセスができるよう、双方マッチングのスタイルにすることを想定しています。<br>
 
