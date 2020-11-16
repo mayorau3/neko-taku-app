@@ -143,11 +143,11 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 <br>
 
 ## :eyes: Future Task / 今後の課題
-I created this app, that cat's owner can make a house reservation now. Ultimately, I suppose that house's owner can access to cat's owner, in other words this app has a feature for matching each other.<br>
+I created this app, that cat's owner can make a house reservation now. Ultimately, I suppose that house's owner can access to cat's owner too, in other words this app has a feature for matching each other.<br>
 
-This app is not enough to use for 
+This app has to have more features because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the feature that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making communities of reagions, 
 
-現状、お宅登録者に対して猫登録が予約をする、という流れになっていますが、最終的には猫登録者に対してもお宅登録者からもアクセスができるよう、双方マッチングのスタイルにすることを想定しています。<br>
+現状、お宅登録者に対して猫登録者が予約をする、という流れになっていますが、最終的には猫登録者に対してもお宅登録者からもアクセスができるよう、双方マッチングのスタイルにすることを想定しています。<br>
 
 また、現状ではまだまだ大まかな流れだけで、サービスとして確立するためには足りない機能が多々あります（※要件定義参照）。特に、お宅登録者の預かり可能日の管理、それに見合った予約機能は必須になります。さらに、地域の人同士のコミュニティの形成、預けやすさや預かりやすさを考慮すると、エリア情報の整理、地図APIの導入、双方やりとりできるチャット機能など、優先して対応する必要があります。それらの導入のためには、今の私のスキルでは足りず、今後も学習の継続が必要だと痛感しています。<br>
 また、高齢者への普及も考慮すると、いかにシンプルにわかりやすく使ってもらえるか、その視点も常に意識する必要があると考えています。
