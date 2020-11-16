@@ -138,9 +138,15 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 <br>
 
 ## :bulb: The point I thought out / 工夫したポイント
+- You can register images with the previews at cat registration and house registration.
+- You can register and search cat character and house character by checkboxes.
+- cat owner's information from users talbe and cats table is displayed when you open a reservation page.
+- User login or not, cat register or not, house 
+
+
 - 猫とお宅情報共に、プレビュー機能付きで複数画像登録できるようにしました。
 - 猫の性格、お宅の特徴はチェックボックスで登録、検索できるようにしました。
-- お預け予約ページを開くと、猫登録者のユーザー情報、猫情報が自動で表示されるようにしました。
+- お預け予約ページを開くと、猫登録者のユーザー情報、猫情報が表示されるようにしました。
 - ユーザーログインの有無、猫登録の有無、お宅登録の有無で画面遷移先をそれぞれ設定しました。
 - お預け予約をするにあたり、猫情報テーブルを用意して、そこからデータを取得しています。今後、猫登録情報の一覧、検索ができ、双方マッチングができるアプリにできるよう、想定してあります。
 <br>
