@@ -50,7 +50,7 @@ https://github.com/mayorau3/neko-taku-app
 <br>
 
 ## :dart: Intention / 制作背景（意図）
-Aging of the population,the trend toward nuclear families and late marriage and decreasing birthrate, These trends are expected to accelerate further in the future.The problem that relationships in a region have become weak for a long time before.　Various things in the world are systematized and we can live without relationships with another person. due to the influence of COVID-19, I feel the situation people feel lonely more and more will increase.<br>
+Aging of the population, the trend toward nuclear families and late marriage and decreasing birthrate, These trends are expected to accelerate further in the future.The problem that relationships in a region have become weak for a long time before.　Various things in the world are systematized and we can live without relationships with another person. due to the influence of COVID-19, I feel the situation people feel lonely more and more will increase.<br>
 
 In this situation, There is pet therapy, A Pet heals us greatly. He(or she) is family and important for the owner. The value will increase more and more.<br>
 The generation who was born around 1950 became in the seventies, Many elderly people hesitate to have a cat because they think about the left of their life.
@@ -60,7 +60,7 @@ Actually there are pet hotels, but I guess they worry their cat may wait for the
 If they can select not "have" but "keep", they can touch cats.<br>
 As a result, I think this app helps them grant wishes each other and I created this app.<br>
 
-Then if users of this app increase, they can leave their cat to a person who lives near them. Furthermore, The community will be born in the reagion through cats and The connection between people will also spread. Keeping a cat or leaving a cat make them avoid teir lonelines. I think the life will become more full of happiness if the connection each other is build and the opportunity of their relationship increases.<br>
+Then if users of this app increase, they can leave their cat to a person who lives near them. Furthermore, The community will be born in the region through cats and The connection between people will also spread. Keeping a cat or leaving a cat make them avoid their loneliness. I think the life will become more full of happiness if the connection each other is build and the opportunity of their relationship increases.<br>
 
 * Why is this app only for cat?<br>
 I thought this app should not be only for a cat but also for a dog. but it's easy to know who is this app for and the app becomes more simple and easy to use if only for a cat.<br>
