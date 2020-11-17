@@ -34,6 +34,7 @@ You browse the details of house's information, enter the required information if
 ### App URL
 https://neko-taku-app.herokuapp.com/
 
+
 ### Basic Authentication / Basic認証
 - ID : neko-taku
 - Pass : 2020
