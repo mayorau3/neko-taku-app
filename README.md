@@ -15,7 +15,8 @@ I can't have a cat because I live alone. I can't go out because I have a cat. If
 A person who wants to leave their cat, a person who wants to take care of cats, this is the app for matching their wishes.<br>
 Cat's owner registers the cat's information for this app. House's owner registers their house's information for this app.<br>
 The lists of house are displayed in the top page and cat's owner can search house's information near their home or according to their desired conditions.
-You browse the details of house's information, enter the required information if you wish, and make a reservation for leaving.<br>
+You browse the details of house's information, enter the required information if you wish, and make a reservation for leaving.
+<br>
 
 
 ひとり暮らしだから猫を飼えない。猫がいるから出かけられない。誰か預かってくれたら…。一時的に預かれたら…。預ける人も預かる人も、お互いの願いを叶えられる場。猫を通して、人との繋がりも広がる。
