@@ -17,6 +17,7 @@ Cat's owner registers the cat's information for this app. House's owner register
 The lists of house are displayed in the top page and cat's owner can search house's information near their home or according to their desired conditions.
 You browse the details of house's information, enter the required information if you wish, and make a reservation for leaving.
 <br>
+<br>
 
 
 ひとり暮らしだから猫を飼えない。猫がいるから出かけられない。誰か預かってくれたら…。一時的に預かれたら…。預ける人も預かる人も、お互いの願いを叶えられる場。猫を通して、人との繋がりも広がる。
@@ -66,6 +67,7 @@ Then if users of this app increase, they can leave their cat to a person who liv
 * Why is this app only for cat?<br>
 I thought this app should not be only for a cat but also for a dog. but it's easy to know who is this app for and the app becomes more simple and easy to use if only for a cat.<br>
 I thought the community through only cats will spread more easily.<br>
+<br>
 <br>
 
 高齢化、核家族化、晩婚化、少子化、これらの流れは今後一層加速していくことが予想されます。また地域の関係性の希薄さも今に始まった問題ではありません。世の中のあらゆる仕組みがシステム化され、人と繋がらなくても生活していくことのできる環境の中、昨今のコロナ禍の影響もあり、ますます個々が孤独を感じる状況は増えているように感じられます。<br>
@@ -146,7 +148,7 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 - cat owner's information from users talbe and cats table is displayed when you open a reservation page.
 - Depending on whether you logged in or not, registered your cat or not, registered your house or not, the page you can connect to changes.
 - I created cats table because I supporsed to create the list page of cats and search fanction and matching fanction.
-
+<br>
 - 猫とお宅情報共に、プレビュー機能付きで複数画像登録できるようにしました。
 - 猫の性格、お宅の特徴はチェックボックスで登録、検索できるようにしました。
 - お預け予約ページを開くと、猫登録者のユーザー情報、猫情報が表示されるようにしました。
@@ -160,6 +162,8 @@ I created this app, that cat's owner can make a house reservation now. Ultimatel
 
 This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area information, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must continue to learn programming more.<br>
 Then, Considering this app become widespread to elderly people, I have to be conscious about how this app is simple and easy to use them.
+<br>
+<br>
 
 現状、お宅登録者に対して猫登録者が予約をする、という流れになっていますが、最終的には猫登録者に対してもお宅登録者からもアクセスができるよう、双方マッチングのスタイルにすることを想定しています。<br>
 
@@ -176,6 +180,7 @@ I also got the support of the people around me. My friend who works as an engine
 Through editing my app, It's the best to edit the app actually to acquire the knowledge and to be flexible, not to remember about programming. There are many things I could understand because of doing actually. I want to improve my skills while I continue to edit this app.
 <br>
 There is a limit in what just I can do by myself, but the connection between people leads to results. I felt that the possibilities are expanding steadily. The connection between people supports people. I created this app to wish for the service to take on the responsibility for that.
+<br>
 <br>
 
 このようなアプリがあったらいい、を基に、これまで学習してきた内容を活用してアプリ作成に臨みました。設計段階から感じてはいましたが、作成していくにあたり、さらにもっとたくさんのスキルや引き出しが自分にあったら、というもどかしさも感じました。<br>
