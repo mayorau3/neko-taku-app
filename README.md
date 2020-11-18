@@ -116,7 +116,7 @@ https://docs.google.com/spreadsheets/d/1gAUSL7_upxpek50PgD-6VJTuvIhE-7HnofDBlIlU
 <br>
 <br>
 
-### My House Registration / 宅登録機能
+### My House Registration / My宅登録機能
 <div align="center">
 <img src="https://user-images.githubusercontent.com/69891481/99071640-dbd02a80-25f5-11eb-9e8f-a2df17b616aa.gif">
 </div>
