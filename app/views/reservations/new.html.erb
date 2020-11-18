@@ -131,64 +131,67 @@
             <span>お預けする猫情報</span>
           </div>
         </div>
-        <div class="card-body row">
-          <div class="col-lg-4">
-            <%= image_tag @cat.images.first, width: "100%", style:"object-fit: contain;" %>
-          </div>
-          <div class="col-lg-8">
-            <div class="form-group d-flex">
-              <label class="col-4 col-form-label">お名前</label>
-              <span class="align-self-center"><%= @cat.name %></span>
-              <span></span>
+        <% @cats.each do |cat| %>
+          <div class="card-body row">
+            <div class="col-lg-4">
+              <%= image_tag cat.images.first, width: "100%", style:"object-fit: contain;" %>
             </div>
-            <div class="form-group d-flex">
-              <label class="col-4 col-form-label">年 齢</label>
-              <span class="align-self-center"><%= @cat.age.name %></span>
-            </div>
-            <div class="form-group d-flex">
-              <label class="col-4 col-form-label">性 別</label>
-              <span class="align-self-center">
-                <% if @cat.sex == 1 %>
-                  オス
-                <% elsif @cat.sex == 2 %>
-                  メス
-                <% end %>
-              </span>
-            </div>
-            <div class="form-group d-flex">
-              <label class="col-4 col-form-label">性 格</label>
-              <div>
+            <div class="col-lg-8">
+              <div class="form-group d-flex">
+                <label class="col-4 col-form-label">お名前</label>
+                <span class="align-self-center"><%= cat.name %></span>
+                <span></span>
+              </div>
+              <div class="form-group d-flex">
+                <label class="col-4 col-form-label">年 齢</label>
+                <span class="align-self-center"><%= cat.age.name %></span>
+              </div>
+              <div class="form-group d-flex">
+                <label class="col-4 col-form-label">性 別</label>
                 <span class="align-self-center">
-                  <% if @cat.chara_clever == 1 %>
-                    <p>お利口</p>
-                  <% end %>
-                  <% if @cat.chara_sleep == 1 %>
-                    <p>よく寝る</p>
-                  <% end %>
-                  <% if @cat.chara_active == 1 %>
-                    <p>わんぱく</p>
-                  <% end %>
-                  <% if @cat.chara_quiet == 1 %>
-                    <p>おとなしい</p>
-                  <% end %>
-                  <% if @cat.chara_greedy == 1 %>
-                    <p>食いしん坊</p>
-                  <% end %>
-                  <% if @cat.chara_lonely == 1 %>
-                    <p>甘えん坊</p>
-                  <% end %>
-                  <% if @cat.chara_own == 1 %>
-                    <p>マイペース</p>
+                  <% if cat.sex == 1 %>
+                    オス
+                  <% elsif cat.sex == 2 %>
+                    メス
                   <% end %>
                 </span>
               </div>
-            </div>
-            <div class="form-group d-flex">
-              <label class="col-4 col-form-label">詳細説明</label>
-              <span class="align-self-center"><%= @cat.explanation %></span>
+              <div class="form-group d-flex">
+                <label class="col-4 col-form-label">性 格</label>
+                <div>
+                  <span class="align-self-center">
+                    <% if cat.chara_clever == 1 %>
+                      <p>お利口</p>
+                    <% end %>
+                    <% if cat.chara_sleep == 1 %>
+                      <p>よく寝る</p>
+                    <% end %>
+                    <% if cat.chara_active == 1 %>
+                      <p>わんぱく</p>
+                    <% end %>
+                    <% if cat.chara_quiet == 1 %>
+                      <p>おとなしい</p>
+                    <% end %>
+                    <% if cat.chara_greedy == 1 %>
+                      <p>食いしん坊</p>
+                    <% end %>
+                    <% if cat.chara_lonely == 1 %>
+                      <p>甘えん坊</p>
+                    <% end %>
+                    <% if cat.chara_own == 1 %>
+                      <p>マイペース</p>
+                    <% end %>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group d-flex">
+                <label class="col-4 col-form-label">詳細説明</label>
+                <span class="align-self-center"><%= cat.explanation %></span>
+              </div>
             </div>
           </div>
-        </div>
+          <span class="border-bottom"></span>
+        <% end %>
       </div>
 
       <div class='text-center my-5'>
