@@ -19,7 +19,6 @@ You browse the details of house's information, enter the required information if
 <br>
 <br>
 
-
 ひとり暮らしだから猫を飼えない。猫がいるから出かけられない。誰か預かってくれたら…。一時的に預かれたら…。預ける人も預かる人も、お互いの願いを叶えられる場。猫を通して、人との繋がりも広がる。
 
 猫を預けたい人、猫を預かりたい人、双方の希望をマッチさせるアプリケーションです。<br>
