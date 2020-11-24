@@ -165,6 +165,7 @@ I created this app, that cat's owner can make a house reservation now. Ultimatel
 This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area information, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must continue to learn programming more.<br>
 Then, Considering this app become widespread to elderly people, I have to be conscious about how this app is simple and easy to use them.
 <br>
+
 ★There are many tasks other than a function. What I should consider especially is about the administrative arrangements to start this service and the license to keep pets. I should examine them minutely. I should also consider that linking to the site for a pet breeding and the system
 <br>
 
