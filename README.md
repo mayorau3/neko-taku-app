@@ -165,6 +165,7 @@ I created this app, that cat's owner can make a house reservation now. Ultimatel
 This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area information, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must continue to learn programming more.<br>
 Then, Considering this app become widespread to elderly people, I have to be conscious about how this app is simple and easy to use them.
 <br>
+★
 <br>
 
 現状、お宅登録者に対して猫登録者が予約をする、という流れになっていますが、最終的には猫登録者に対してもお宅登録者からもアクセスができるよう、双方マッチングのスタイルにすることを想定しています。<br>
@@ -172,7 +173,7 @@ Then, Considering this app become widespread to elderly people, I have to be con
 また、現状ではまだまだ大まかな流れだけで、サービスとして確立するためには足りない機能が多々あります（※要件定義参照）。特に、お宅登録者の預かり可能日の管理、それに見合った予約機能は必須になります。さらに、地域の人同士のコミュニティの形成、預けやすさや預かりやすさを考慮すると、エリア情報の整理、地図APIの導入、双方やりとりできるチャット機能など、優先して対応する必要があります。それらの導入のためには、今の私のスキルでは足りない部分もあり、今後も学習の継続が必要だと痛感しています。<br>
 また、高齢者への普及も考慮すると、いかにシンプルにわかりやすく使ってもらえるか、その視点も常に意識する必要があると考えています。
 <br>
-機能面以外でも課題は山積みです。特に考慮すべきは
+★機能面以外でも課題は山積みです。特に考慮すべきは事業開始にあたっての動物取扱業の登録などの行政の取り決めや、ペット飼育に関する資格に関して調査が必要です。また、ペットの命を安全に預かるために、例えば、本アプリ内でペット飼育養成のサイトへのリンクや、適性検査をして通過した方のみお宅登録ができるような仕組みにするなどの対策が必要になります。
 <br>
 
 ## :thought_balloon: Consideration / 考察
