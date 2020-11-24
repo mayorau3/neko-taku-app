@@ -166,7 +166,7 @@ This app has to have more functions because this is not enough to work as servic
 Then, Considering this app become widespread to elderly people, I have to be conscious about how this app is simple and easy to use them.
 <br>
 
-★There are many tasks other than a function. What I should consider especially is about the administrative arrangements to start this service and the license to keep pets. I should examine them minutely. I should also consider that linking to the site for a pet breeding and the system
+There are many tasks other than a function. What I should consider especially is about the administrative arrangements to start this service and the license to keep pets. I should examine them minutely. I should also consider linking to the site for a pet breeding and the system that the only person who passed the aptitude inspection can register their house. 
 <br>
 
 現状、お宅登録者に対して猫登録者が予約をする、という流れになっていますが、最終的には猫登録者に対してもお宅登録者からもアクセスができるよう、双方マッチングのスタイルにすることを想定しています。<br>
@@ -175,7 +175,7 @@ Then, Considering this app become widespread to elderly people, I have to be con
 また、高齢者への普及も考慮すると、いかにシンプルにわかりやすく使ってもらえるか、その視点も常に意識する必要があると考えています。
 <br>
 
-★機能面以外でも課題は山積みです。特に考慮すべきは、事業開始にあたっての動物取扱業の登録などの行政の取り決めや、ペット飼育に関する資格に関してです。綿密な調査と対策が必要になります。また、ペットの命を安全に預かるために、例えば、本アプリ内でペット飼育養成のサイトへのリンクや、適性検査をして通過した方のみお宅登録ができるような仕組みにするなどの対策も検討すべきです。
+機能面以外でも課題は山積みです。特に考慮すべきは、事業開始にあたっての動物取扱業の登録などの行政の取り決めや、ペット飼育に関する資格に関してです。綿密な調査と対策が必要になります。また、ペットの命を安全に預かるために、例えば、本アプリ内でペット飼育養成のサイトへのリンクや、適性検査をして通過した方のみお宅登録ができるような仕組みにするなどの対策も検討すべきです。
 <br>
 <br>
 
