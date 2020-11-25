@@ -181,7 +181,7 @@ There are many tasks other than a function. What I should consider especially is
 
 ## :thought_balloon: Consideration / 考察
 Based on "I want the app I can do like this", I tried to create this app while I used what I've learned. It's frustrating for me that my skill is lack to edit this app not only from a stage of early design but also during editing.<br>
-And,
+And, I felt that it's the best to just practice to fix knowledge and ability which can be applied through editing this app. There are many things I can understand by doing. I want to improve my skills while I continue to edit this app.
 <br>
 I also got the support of the people around me. My friend who works as an engineer for system gave me some good advice. My friend who works as an illustrator makes me the logo. some friends who love a cat gave me their opinions about this service, so It helped me come up with the idea and what functions this app has to have. Through the meeting with the members who have learned together at TECH CAMP everyday, my thought was organized, I came up with the idea and I got some hints from them. <br>
 Through editing my app, It's the best to edit the app actually to acquire the knowledge and to be flexible, not to remember about programming. There are many things I could understand because of doing actually. I want to improve my skills while I continue to edit this app.
