@@ -13,9 +13,9 @@
 I can't have a cat because I live alone. I can't go out because I have a cat. If someone takes care of my cat. If someone leaves a cat to me temporarily. This app helps us grant wishes each other. The connection between people will also spread through cats.<br>
 
 A person who wants to leave their cat, a person who wants to take care of cats, this is the app for matching their wishes.<br>
-Cat's owner registers the cat's information for this app. House's owner registers their house's information for this app.<br>
-The lists of house are displayed in the top page and cat's owner can search house's information near their home or according to their desired conditions.
-You browse the details of house's information, enter the required information if you wish, and make a reservation for leaving.
+Cat owner registers the cat information for this app. House owner registers their house information for this app.<br>
+The lists of house are displayed in the top page and cat owner can search house information near their home or according to their desired conditions.
+You browse the details of house information, enter the required information if you wish, and make a reservation for leaving.
 <br>
 <br>
 
@@ -39,10 +39,10 @@ https://neko-taku-app.herokuapp.com/
 - Pass : 2020
 
 ### Account for Test / テスト用アカウント
-- House's owner<br>
+- House owner<br>
   ・Email : ko@ko<br>
   ・Pass : ko1010
-- Cat's owner<br>
+- Cat owner<br>
   ・Email：neko@neko<br>
   ・Pass：neko11<br>
   
@@ -159,9 +159,9 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 <br>
 
 ## :eyes: Future Task / 今後の課題
-I created this app, that cat's owner can make a house reservation now. Ultimately, I suppose that house's owner can access to cat's owner too, in other words this app has a function of matching each other.<br>
+I created this app, that cat owner can make a house reservation now. Ultimately, I suppose that house owner can access to cat owner too, in other words this app has a function of matching each other.<br>
 
-This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house's owner can keep a cat and cat's owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area information, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must continue to learn programming more.<br>
+This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house owner can keep a cat and cat owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area information, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must continue to learn programming more.<br>
 Then, Considering this app become widespread to elderly people, I have to be conscious about how this app is simple and easy to use them.
 <br>
 
