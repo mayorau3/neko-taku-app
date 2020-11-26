@@ -6,12 +6,13 @@
 
 ## :book: Overview / 概要
 
-### Not pet hotel, the service for taking care of your cat as an individual, - Neko-taku -.
+### Not pet hotel but rather, a service for taking care of your cat as an individual, - Neko-taku -.
 ### ペットホテルならぬ、個人で猫を預かるサービス『ねこ宅』
 <br>
 
-I can't have a cat because I live alone. I can't go out because I have a cat. If someone takes care of my cat. If someone leaves a cat to me temporarily. This app helps us grant wishes each other. The connection between people will also spread through cats.<br>
+"I can't have a cat because I live alone. I can't go out because I have a cat. But, if someone takes care of my cat... Or, if someone would let me take care of their cat temporarily..." This app helps us grant each other's wishes. Through cats we can grow our connections with others.<br>
 
+★★★
 A person who wants to leave their cat, a person who wants to take care of cats, this is the app for matching their wishes.<br>
 Cat owner registers the cat information for this app. House owner registers their house information for this app.<br>
 The lists of house are displayed in the top page and cat owner can search house information near their home or according to their desired conditions.
