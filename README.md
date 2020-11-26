@@ -88,7 +88,6 @@ I thought the community through only cats will spread more easily.<br>
 犬と猫用とする考えもありましたが、猫に特化することでターゲットを絞りやすく、アプリの使用もシンプルにわかりやすく構成できるため<br>
 一定のユーザーに限定することで、「猫」という共通のコミュニティ波及に繋がりやすくなると考えたため
 
-
 <br>
 <br>
 
