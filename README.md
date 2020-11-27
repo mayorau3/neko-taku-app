@@ -59,13 +59,13 @@ Elderly people who were born around 1950 are in their 70's now. They are hesitan
 I bet there are several people who fit this description.<br>
 
 Pet hotels exist as an option however, owners worry that their cat may end up waiting for them in a small cage all day long without being loved or cared for.<br>
-★If they can select not "have" but "keep", they can touch cats.<br>
-As a result, I think this app helps them grant wishes each other and I created this app.<br>
+People are less hesitant if given the option to "take care" of a cat instead of "owning" one.<br>
+I created this app with the intention of fulfilling the wishes of both cat owners and caretakers.<br>
 
-Then if users of this app increase, they can leave their cat to a person who lives near them. Furthermore, The community will be born in the region through cats and The connection between people will also spread. Keeping a cat or leaving a cat make them avoid their loneliness. I think the life will become more full of happiness if the connection each other is build and the opportunity of their relationship increases.<br>
+As the users of the app increase, it'll be easier to find caretakers near a cat owner's home. As more people register profiles on the app, people in a community will be able to take care of their neighbor's pets and, in this way, they will be able to strengthen their community's bond. Helping take care of another person's cat and/or owning a cat can be an effective way to keep one's loneliness at bay. People will not only be able to feel happiness through this deed but also through the chance to meet and connect with other people.<br>
 
-* Why is this app only for cat?<br>
-I thought this app should not be only for a cat but also for a dog. but it's easy to know who is this app for and the app becomes more simple and easy to use if only for a cat.<br>
+* Why is this app focused towards cats?<br>
+At first, I considered the idea of creating this app for both cat and dog owners. However, by focusing on "cats" and their owners as the target audience the intention and usage of the app would be simplified and straightforward.<br>
 I thought the community through only cats will spread more easily.<br>
 <br>
 <br>
@@ -159,7 +159,7 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 <br>
 
 ## :eyes: Future Task / 今後の課題
-I created this app, that cat owner can make a house reservation now. Ultimately, I suppose that house owner can access to cat owner too, in other words this app has a function of matching each other.<br>
+★I created this app, that cat owner can make a house reservation now. Ultimately, I suppose that house owner can access to cat owner too, in other words this app has a function of matching each other.<br>
 
 This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house owner can keep a cat and cat owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area information, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must continue to learn programming more.<br>
 Then, Considering this app become widespread to elderly people, I have to be conscious about how this app is simple and easy to use them.
