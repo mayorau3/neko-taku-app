@@ -13,9 +13,9 @@
 "I can't have a cat because I live alone. I can't go out because I have a cat. But, if someone takes care of my cat... Or, if someone would let me take care of their cat temporarily..." This app helps us grant each other's wishes. Through cats we can grow our connections with others.<br>
 
 This app is meant to match a person who needs their cat taken care of with a person who wants to take care of it.<br>
-Cat owners will register the cat's information and house owners will register their house's information.<br>★
-The lists of house are displayed in the top page and cat owner can search house information near their home or according to their desired conditions.
-You browse the details of house information, enter the required information if you wish, and make a reservation for leaving.
+Cat owners will register the cat's information and house owners will register their house's information.<br>
+A list of houses will be displayed on the app's main page. Cat owners can search another resident's information near their home and can filter searches according to their desired conditions.
+After reviewing the details of a resident's information, cat owners can request additional information and make a reservation for dropping off their pet.
 <br>
 <br>
 
@@ -52,9 +52,9 @@ https://github.com/mayorau3/neko-taku-app
 <br>
 
 ## :dart: Intention / 制作背景（意図）
-Aging of the population, the trend toward nuclear families and late marriage and decreasing birthrate, These trends are expected to accelerate further in the future.The problem that relationships in a region have become weak for a long time before.　Various things in the world are systematized and we can live without relationships with another person. due to the influence of COVID-19, I feel the situation people feel lonely more and more will increase.<br>
+The number of japan's aging population, nuclear families, late marriages and individuals choosing not to have children are all expected to grow in the future. The weakening of relationships between people in a particular region is not a recent problem. A growing number of services in the world are systematized and we have learned to live without creating relationships with other people. With the coupled influence of COVID-19, I feel that more and more people will start to grow isolated and melancholy.<br>
 
-In this situation, There is pet therapy, A Pet heals us greatly. He(or she) is family and important for the owner. The value will increase more and more.<br>
+Pets can heal us through a sort of "pet therapy". A pet's value to its owner is equal to that of a cherished family member who can ease our anxieties. I think more people will begin to see the importance and value that having a pet has for humans.<br>★
 The generation who was born around 1950 became in the seventies, Many elderly people hesitate to have a cat because they think about the left of their life.
 In stead of getting married, They want to have a cat. But, they can't decide to have a cat because they think about when they go out all day long or for a few days. Are there many such people? <br>
 
