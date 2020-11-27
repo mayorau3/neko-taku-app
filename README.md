@@ -182,7 +182,7 @@ There are many tasks other than a function. What I should consider especially is
 Based on "I want the app I can do like this", I tried to create this app while I used what I've learned. It's frustrating for me that my skill is lack to edit this app not only from a stage of early design but also during editing.<br>
 And, I felt that it's the best to just practice to fix knowledge and ability which can be applied through editing this app. There are many things I can understand by doing. I want to improve my skills while I continue to edit this app.
 <br>
-I also got the support of the people around me. ★英訳添削してもらったこと追記　My friend who works as an engineer for system gave me some good advice. My friend who works as an illustrator makes me the logo. some friends who love a cat gave me their opinions about this service, so It helped me come up with the idea and what functions this app has to have. Through the meeting with the members who have learned together at TECH CAMP everyday, my thought was organized, I came up with the idea and I got some hints from them. <br>
+I also got the support of the people around me. My friend who works as an engineer for system gave me some good advice. My friend who works as an illustrator makes me the logo. some friends who love a cat gave me their opinions about this service, so It helped me come up with the idea and what functions this app has to have. Through the meeting with the members who have learned together at TECH CAMP everyday, my thought was organized, I came up with the idea and I got some hints from them. <br>
 Through editing my app, It's the best to edit the app actually to acquire the knowledge and to be flexible, not to remember about programming. There are many things I could understand because of doing actually. I want to improve my skills while I continue to edit this app.
 <br>
 There is a limit in what just I can do by myself, but the connection between people leads to results. I felt that the possibilities are expanding steadily. The connection between people supports people. I created this app to wish for the service to take on the responsibility for that.
@@ -192,7 +192,7 @@ There is a limit in what just I can do by myself, but the connection between peo
 このようなアプリがあったらいい、を基に、これまで学習してきた内容を活用してアプリ作成に臨みました。設計段階から感じてはいましたが、作成していくにあたり、さらにもっとたくさんのスキルや引き出しが自分にあったら、というもどかしさも感じました。<br>
 また、ただ知識を詰め込むのではなく、自身のアプリ作成を通して、実践こそが知識、応用力の定着に一番だということを実感しました。やったからわかることが多々あります。これからもアプリ作成を続け、自身のスキルアップに繋げていきたいです。<br>
 
-周りの人の支えもありました。現役エンジニアの友人よりアドバイスをもらったり、イラストレーターの友人にロゴを作ってもらいました。複数の猫好きの友人にはこのサービスについてヒアリングし、あったらいい機能を洗い出しました。テックキャンプ学習仲間と毎日複数回アウトプットの場を設け話していく中で、思考が整理され、新しいアイデアが浮かんだり、ヒントをもらいました。<br>
+周りの人の支えもありました。現役エンジニアの友人よりアドバイスをもらったり、イラストレーターの友人にロゴを作ってもらいました。複数の猫好きの友人にはこのサービスについてヒアリングし、あったらいい機能を洗い出しました。テックキャンプ学習仲間と毎日複数回アウトプットの場を設け話していく中で、思考が整理され、新しいアイデアが浮かんだり、ヒントをもらいました。私が書き起こした本文の英訳も知人に添削してもらいました。<br>
 一人では限界があるものも、人との関係性の構築がより良い成果に繋がり、可能性がどんどん広がっていくことを実感しました。やはり、人との繋がりが人を支えます。このアプリも、その一役を担えるサービスとなったら、という願いを込めて作成しました。
 <br>
 <br>
