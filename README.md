@@ -54,12 +54,12 @@ https://github.com/mayorau3/neko-taku-app
 ## :dart: Intention / 制作背景（意図）
 The number of japan's aging population, nuclear families, late marriages and individuals choosing not to have children are all expected to grow in the future. The weakening of relationships between people in a particular region is not a recent problem. A growing number of services in the world are systematized and we have learned to live without creating relationships with other people. With the coupled influence of COVID-19, I feel that more and more people will start to grow isolated and melancholy.<br>
 
-Pets can heal us through a sort of "pet therapy". A pet's value to its owner is equal to that of a cherished family member who can ease our anxieties. I think more people will begin to see the importance and value that having a pet has for humans.<br>★
-The generation who was born around 1950 became in the seventies, Many elderly people hesitate to have a cat because they think about the left of their life.
-In stead of getting married, They want to have a cat. But, they can't decide to have a cat because they think about when they go out all day long or for a few days. Are there many such people? <br>
+Pets can heal us through a sort of "pet therapy". A pet's value to its owner is equal to that of a cherished family member who can ease our anxieties. I think more people will begin to see the importance and value that having a pet has for humans.<br>
+Elderly people who were born around 1950 are in their 70's now. They are hesitant in raising an animal because they worry about leaving it behind. Some people would like to bring in a cat and establish a mini family instead of getting married. Yet, not knowing what to do with their pet if they need to be absent from home for a long period of time deters them from getting one.
+I bet there are several people who fit this description.<br>
 
-Actually there are pet hotels, but I guess they worry their cat may wait for them in a gage all day long or they want their cat to be loved.<br>
-If they can select not "have" but "keep", they can touch cats.<br>
+Pet hotels exist as an option however, owners worry that their cat may end up waiting for them in a small cage all day long without being loved or cared for.<br>
+★If they can select not "have" but "keep", they can touch cats.<br>
 As a result, I think this app helps them grant wishes each other and I created this app.<br>
 
 Then if users of this app increase, they can leave their cat to a person who lives near them. Furthermore, The community will be born in the region through cats and The connection between people will also spread. Keeping a cat or leaving a cat make them avoid their loneliness. I think the life will become more full of happiness if the connection each other is build and the opportunity of their relationship increases.<br>
