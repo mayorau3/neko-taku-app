@@ -12,9 +12,8 @@
 
 "I can't have a cat because I live alone. I can't go out because I have a cat. But, if someone takes care of my cat... Or, if someone would let me take care of their cat temporarily..." This app helps us grant each other's wishes. Through cats we can grow our connections with others.<br>
 
-★★★
-A person who wants to leave their cat, a person who wants to take care of cats, this is the app for matching their wishes.<br>
-Cat owner registers the cat information for this app. House owner registers their house information for this app.<br>
+This app is meant to match a person who needs their cat taken care of with a person who wants to take care of it.<br>
+Cat owners will register the cat's information and house owners will register their house's information.<br>★
 The lists of house are displayed in the top page and cat owner can search house information near their home or according to their desired conditions.
 You browse the details of house information, enter the required information if you wish, and make a reservation for leaving.
 <br>
