@@ -159,10 +159,10 @@ Ruby/Ruby on Rails/JavaScript/MySQL/GitHub/AWS-S3/Heroku/Visual Studio Code/Boot
 <br>
 
 ## :eyes: Future Task / 今後の課題
-★I created this app, that cat owner can make a house reservation now. Ultimately, I suppose that house owner can access to cat owner too, in other words this app has a function of matching each other.<br>
+Currently, cat owners can now make a reservation with any registered houses. However,  ultimately, I would like house owners to be able to access specific cat profiles via a matching process.<br>
 
-This app has to have more functions because this is not enough to work as service in actuality　(Refer to Requirement Definition). Especially, I have to create the function that manages when house owner can keep a cat and cat owner to make a reservation the house according to the schedule. Considering making local communities and how easy to leave and keep a cat, I have to create next functions as priority: organizing area information, introducing map API, adding chat function, etc. As introducing them, My skill isn't enough, I fully realized that I must continue to learn programming more.<br>
-Then, Considering this app become widespread to elderly people, I have to be conscious about how this app is simple and easy to use them.
+Currently, this app has too few functions to be utilized to its fullest by users (Refer to Requirement Definition). Specifically, it's necessary to create a function that tracks how long a house owner can keep a cat and then match that period with the period of time for which a cat owner needs to make a reservation. Keeping local communities and their connections in mind along with the ease in which a user should be able to make and accept a reservation for cat, I have decided to prioritize the following app functions: organization of area information, API mapping, and a chatting function. At the present time, I am lacking in my knowledge of programming to create such functions. I fully realized that I must continue to learn programming more.<br>
+Additionally, focusing on use by the elder population, I need to be conscious of its simplicity and user-friendliness.
 <br>
 
 There are many tasks other than a function. What I should consider especially is about the administrative arrangements to start this service and the license to keep pets. I should examine them minutely. I should also consider linking to the site for a pet breeding and the system that the only person who passed the aptitude inspection can register their house. 
