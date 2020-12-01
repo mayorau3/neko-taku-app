@@ -186,7 +186,7 @@ And, I felt that it's the best to just practice to fix knowledge and ability whi
 I received a lot of advice from those around me. I was able to advice from a friend who works as an Engineer and an Illustrator friend of mine helped with designing the logo. Discussing the app and it's service with friends who like cats was helpful in visualizing the types of functions owners would like to have. Lastly, I routinely met with several TECH CAMP colleagues to discuss my ideas and receive input. With their help I was able to organize my thoughts and came up with the current application.<br>
 I realized while editing this app that it isn't through the continuous consumption of information that makes a difference in your skill but rather through continuous, practical application. I was able to unserstand programming concepts better simply by trying to implement them. I hope to improve my skills through the editing of this app.
 <br>
-★There is a limit in what just I can do by myself, but the connection between people leads to results. I felt that the possibilities are expanding steadily. The connection between people supports people. I created this app to wish for the service to take on the responsibility for that.
+There is a limit in what I can do on my own so by building connections with others not only leads to better results but I felt that it also creates more possibilities. It goes without saying that we support each other through our connections with each other. I created this app in hopes of developing a service that plays a role in establishing these connections.
 <br>
 <br>
 
