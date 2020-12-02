@@ -165,7 +165,8 @@ Currently, this app has too few functions to be utilized to its fullest by users
 Additionally, focusing on use by the elder population, I need to be conscious of its simplicity and user-friendliness.
 <br>
 
-There are many tasks other than a function. What I should consider especially is about the administrative arrangements to start this service and the license to keep pets. I should examine them minutely. I should also consider linking to the site for a pet breeding and the system that the only person who passed the aptitude inspection can register their house. 
+There are many tasks other than a function. What I should consider especially is about the administrative arrangements to start this service and the license to keep pets. I should examine them minutely. I should also consider linking to the site for a pet breeding and the system that the only person who passed the aptitude inspection can register their house.<br>
+It requires consideration about personal information. A detailed area information is necessary to search cat houses. However I must avoid releasing all of house owners' address to public.<br>
 <br>
 
 現状、お宅登録者に対して猫登録者が予約をする、という流れになっていますが、最終的には猫登録者に対してもお宅登録者からもアクセスができるよう、双方マッチングのスタイルにすることを想定しています。<br>
