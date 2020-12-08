@@ -10,7 +10,8 @@
 ### ペットホテルならぬ、個人で猫を預かるサービス『ねこ宅』
 <br>
 
-"I can't have a cat because I live alone. I can't go out because I have a cat. But, if someone takes care of my cat... Or, if someone would let me take care of their cat temporarily..." This app helps us grant each other's wishes. Through cats we can grow our connections with others.<br>
+"I can't have a cat because I live alone. I can't go out because I have a cat. But, if someone takes care of my cat... Or, if someone would let me take care of their cat temporarily..." This app helps us grant each other's wishes. Through cats we can grow our connections with others.
+<br>
 
 This app is meant to match a person who needs their cat taken care of with a person who wants to take care of it.<br>
 Cat owners will register the cat's information and house owners will register their house's information.<br>
