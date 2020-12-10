@@ -44,8 +44,8 @@ https://neko-taku-app.herokuapp.com/
   ・Email : ko@ko<br>
   ・Pass : ko1010
 - Cat owner<br>
-  ・Email：neko@neko<br>
-  ・Pass：neko11<br>
+  ・Email : neko@neko<br>
+  ・Pass : neko11<br>
   
 ### GitHub Repository / GitHubリポジトリ
 https://github.com/mayorau3/neko-taku-app
