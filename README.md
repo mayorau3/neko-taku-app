@@ -2,7 +2,7 @@
 
 ### <a href="https://neko-taku-app.herokuapp.com/"><img src="https://user-images.githubusercontent.com/69891481/99021029-19579800-25a3-11eb-849e-b12b3d55c1c5.png" width="50px"></a>　ねこ宅 - Neko-Taku -
 <br>
-<br>
+
 
 ## :book: Overview / 概要
 
